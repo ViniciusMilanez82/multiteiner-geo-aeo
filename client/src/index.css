@@ -402,6 +402,12 @@
   display: flex;
   animation: scroll-logos 30s linear infinite;
 }
+.animate-scroll-left {
+  animation: scroll-logos 40s linear infinite;
+}
+.animate-scroll-left:hover {
+  animation-play-state: paused;
+}
 @keyframes scroll-logos {
   0% { transform: translateX(0); }
   100% { transform: translateX(-50%); }

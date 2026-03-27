@@ -125,6 +125,7 @@ export default function Navbar() {
             <NavLink href="/guia" label="Guia" active={location === "/guia"} textColor={textColor} />
             <NavLink href="/faq" label="FAQ" active={location === "/faq"} textColor={textColor} />
             <NavLink href="/blog" label="Blog" active={location.startsWith("/blog")} textColor={textColor} />
+            <NavLink href="/cases" label="Cases" active={location === "/cases"} textColor={textColor} />
           </div>
 
           {/* CTA + Mobile toggle */}
@@ -163,6 +164,7 @@ export default function Navbar() {
             <MobileLink href="/guia" label="Guia Completo" />
             <MobileLink href="/faq" label="FAQ" />
             <MobileLink href="/blog" label="Blog" />
+            <MobileLink href="/cases" label="Cases" />
             <MobileLink href="/contato" label="Contato" />
 
             <div className="mt-6 pt-4 border-t border-gray-100">

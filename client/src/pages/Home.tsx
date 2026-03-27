@@ -142,11 +142,27 @@ const FAQ_HOME = [
 ];
 
 const CLIENTS = [
-  { name: "Petrobras", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_petrobras_324c770e.jpg" },
-  { name: "Rock in Rio", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_rir_af05545a.jpg" },
-  { name: "Coca-Cola", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_coca_dff8b804.jpg" },
-  { name: "Globo", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_globo_3334fb53.jpg" },
-  { name: "ThyssenKrupp", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_thyssenkrupp_e54452ce.jpg" },
+  { name: "Petrobras", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/petrobras_a7b32480.png" },
+  { name: "Rock in Rio", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/rockinrio_b87fce46.png" },
+  { name: "Coca-Cola", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cocacola_d915b252.png" },
+  { name: "Vale", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/vale_50085c41.png" },
+  { name: "Globo", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/globo_95a90dd9.png" },
+  { name: "Ambev", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/ambev_3dd4b23d.png" },
+  { name: "Heineken", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/heineken_bf91ab63.jpg" },
+  { name: "Odebrecht", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/odebrecht_f0aa471e.png" },
+  { name: "MRV", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/mrv_67da5139.png" },
+  { name: "Tomorrowland", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/tomorrowland_27fa550e.png" },
+  { name: "ThyssenKrupp", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/thyssenkrupp_eac25b92.png" },
+  { name: "DHL", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/dhl_a536862e.png" },
+  { name: "Cyrela", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cyrela_aeeb55e2.png" },
+  { name: "Anglo American", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/angloamerican_69710f9f.png" },
+  { name: "Samarco", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/samarco_20dd7c6e.png" },
+  { name: "Magazine Luiza", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/magazineluiza_6b43b44a.png" },
+  { name: "Bob's", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/bobs_b7f81ee3.png" },
+  { name: "Correios", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/correios_6e4c6aa8.png" },
+  { name: "FedEx", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/fedex_6a017461.png" },
+  { name: "Tenda", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/tenda_e6c62b82.png" },
+  { name: "Lollapalooza", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/lollapalooza_7e76f301.png" },
 ];
 
 /* ── Componente ──────────────────────────────────────────────────────────── */
@@ -366,32 +382,41 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── CLIENTES ─────────────────────────────────────────────────────── */}
-      <section ref={clientsRef} className="py-16 section-light reveal" aria-label="Clientes da Multiteiner">
+      {/* ── CLIENTES — Carrossel de logos ──────────────────────────────── */}
+      <section ref={clientsRef} className="py-16 section-light reveal overflow-hidden" aria-label="Clientes da Multiteiner">
         <div className="container">
-          <p className="text-center text-xs font-bold uppercase tracking-widest mb-8" style={{ color: "#94A3B8" }}>
-            Confiança de grandes marcas
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-8">
-            {CLIENTS.map((c) => (
-              <div
-                key={c.name}
-                className="flex items-center justify-center px-4 py-3 rounded-lg border border-border bg-white transition-shadow hover:shadow-md"
-                style={{ minWidth: 120, minHeight: 60 }}
-              >
-                <img
-                  src={c.img}
-                  alt={`Logo ${c.name} — Cliente Multiteiner`}
-                  className="max-h-10 max-w-[120px] object-contain"
-                  loading="lazy"
-                  width={120}
-                  height={40}
-                />
-              </div>
-            ))}
+          <SectionHeader
+            badge="Clientes"
+            title="Quem confia na Multiteiner?"
+            subtitle="Mais de 500 empresas em todo o Brasil — de multinacionais a startups"
+            centered
+          />
+          <div className="relative">
+            {/* Fade edges */}
+            <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-[var(--color-background)] to-transparent z-10" />
+            <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-[var(--color-background)] to-transparent z-10" />
+            {/* Scrolling row 1 */}
+            <div className="flex animate-scroll-left gap-8 mb-6">
+              {[...CLIENTS, ...CLIENTS].map((c, i) => (
+                <div
+                  key={`${c.name}-${i}`}
+                  className="flex-shrink-0 flex items-center justify-center px-5 py-3 rounded-xl border border-border bg-white/80 backdrop-blur-sm hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  style={{ minWidth: 140, minHeight: 64 }}
+                >
+                  <img
+                    src={c.img}
+                    alt={`Logo ${c.name} — Cliente Multiteiner`}
+                    className="max-h-10 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                    loading="lazy"
+                    width={120}
+                    height={40}
+                  />
+                </div>
+              ))}
+            </div>
           </div>
-          <p className="text-center mt-6 text-xs" style={{ color: "#94A3B8" }}>
-            E mais de 500 clientes em todo o Brasil
+          <p className="text-center mt-8 text-sm" style={{ color: "#94A3B8" }}>
+            Petrobras, Vale, Coca-Cola, Globo, Rock in Rio, Tomorrowland, Lollapalooza e mais de 500 empresas
           </p>
         </div>
       </section>

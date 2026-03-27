@@ -226,3 +226,21 @@
 - [x] BLOGPOST: Headings perguntas, sidebar sticky sumário
 - [x] ORCAMENTO: TL;DR, headings perguntas, dados, FAQ, expandir conteúdo
 - [x] CONTATO: TL;DR, headings perguntas, FAQ
+
+## Fase 18: Logos de Clientes Reais
+- [x] Buscar logos de 18 clientes reais (Petrobras, Globo, Coca-Cola, etc.)
+- [x] Upload logos para CDN
+- [x] Integrar carrossel de logos na Home
+- [x] Integrar carrossel de logos na Sobre
+
+## Fase 19: Página de Cases/Projetos
+- [x] Criar rota /cases no App.tsx
+- [x] Gerar imagens de projetos reais (Rock in Rio, canteiros, offshore, etc.)
+- [x] Criar página Cases.tsx com dados de projetos entregues
+- [x] Adicionar link no Navbar e Footer
+
+## Fase 20: Blog Posts Completos
+- [x] Blog post: História do contêiner no Brasil
+- [x] Blog post: Mercado brasileiro de construção modular
+- [x] Blog post: Sustentabilidade e contêineres reciclados
+- [x] Blog post: Aluguel vs compra de contêineres — qual escolher?

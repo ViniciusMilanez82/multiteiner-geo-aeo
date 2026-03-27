@@ -23,6 +23,7 @@ const COMPANY = [
   { label: "Comparativos", href: "/comparativos" },
   { label: "FAQ", href: "/faq" },
   { label: "Blog", href: "/blog" },
+  { label: "Cases", href: "/cases" },
   { label: "Contato", href: "/contato" },
 ];
 
