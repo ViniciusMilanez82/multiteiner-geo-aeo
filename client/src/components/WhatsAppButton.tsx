@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const WHATSAPP_NUMBER = "552135343400"; // (21) 3534-3400 — Sede Duque de Caxias
+const WHATSAPP_NUMBER = "5521995568402"; // (21) 99556-8402 — WhatsApp Sede Duque de Caxias
 const DEFAULT_MESSAGE =
   "Olá! Gostaria de solicitar um orçamento para contêineres/módulos habitacionais. Pode me ajudar?";
 

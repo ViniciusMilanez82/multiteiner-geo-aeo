@@ -8,8 +8,9 @@ import Footer from "@/components/Footer";
 import SEOHead, { organizationSchema, websiteSchema, makeFAQSchema } from "@/components/SEOHead";
 import {
   AnswerBlock, CitablePassage, SectionHeader,
-  EvidenceBadge, BenefitCard, FAQBlock, CTASection, EntityBadge
+  EvidenceBadge, BenefitCard, FAQBlock, CTASection
 } from "@/components/GeoAeo";
+import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 
 /* ── Dados estruturados — AEO/GEO ────────────────────────────────────────── */
 const HERO_ANSWER =
@@ -19,7 +20,7 @@ const EVIDENCES = [
   { value: "30+", label: "Anos de experiência" },
   { value: "5.000+", label: "Projetos entregues" },
   { value: "500+", label: "Clientes ativos" },
-  { value: "100%", label: "Certificados ABNT" },
+  { value: "3", label: "Unidades no Brasil" },
 ];
 
 const PRODUCTS = [
@@ -132,7 +133,7 @@ const FAQ_HOME = [
   },
   {
     question: "A Multiteiner atende todo o Brasil?",
-    answer: "Sim. A Multiteiner atende todo o território nacional, com logística própria para entrega e montagem em qualquer estado. Temos experiência em projetos em regiões remotas, como operações de mineração e petróleo.",
+    answer: "Sim. A Multiteiner atende todo o território nacional, com logística própria para entrega e montagem em qualquer estado. Possui três unidades: Duque de Caxias (RJ), Itapecerica da Serra (SP) e Macaé (RJ).",
   },
   {
     question: "É possível alugar ou apenas comprar?",
@@ -150,6 +151,15 @@ const CLIENTS = [
 
 /* ── Componente ──────────────────────────────────────────────────────────── */
 export default function Home() {
+  const answerRef = useScrollReveal<HTMLElement>();
+  const productsRef = useStaggerReveal<HTMLDivElement>();
+  const citableRef = useScrollReveal<HTMLElement>();
+  const segmentsRef = useStaggerReveal<HTMLDivElement>();
+  const benefitsRef = useStaggerReveal<HTMLDivElement>();
+  const clientsRef = useScrollReveal<HTMLElement>();
+  const testimonialsRef = useStaggerReveal<HTMLDivElement>();
+  const faqRef = useScrollReveal<HTMLElement>();
+
   const homeSchema = [
     organizationSchema,
     websiteSchema,
@@ -163,10 +173,6 @@ export default function Home() {
       description: HERO_ANSWER,
       isPartOf: { "@id": "https://www.multiteiner.com.br/#website" },
       about: { "@id": "https://www.multiteiner.com.br/#organization" },
-      primaryImageOfPage: {
-        "@type": "ImageObject",
-        url: "https://www.multiteiner.com.br/og-home.jpg",
-      },
     },
   ];
 
@@ -187,53 +193,46 @@ export default function Home() {
         itemScope
         itemType="https://schema.org/WPHeader"
       >
-        {/* Background */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/slide_01_801ee9e9.jpg')",
           }}
           role="img"
-          aria-label="Contêineres Multiteiner — Maior empresa de contêineres do Brasil"
+          aria-label="Pátio de contêineres Multiteiner em Duque de Caxias"
         />
         <div className="hero-overlay absolute inset-0" />
 
         <div className="container relative z-10 pt-24 pb-20">
           <div className="max-w-3xl">
-            {/* GEO: entidade clara */}
             <div className="mb-5">
               <span className="entity-badge">Maior empresa de contêineres do Brasil</span>
             </div>
 
-            {/* Headline — Barlow Condensed para impacto */}
             <h1
               className="heading-display text-5xl sm:text-6xl lg:text-7xl text-white mb-6"
               itemProp="headline"
             >
               TRANSFORMAMOS
               <br />
-              <span style={{ color: "#F2C200" }}>CONTÊINERES</span>
+              <span className="text-gradient-gold" style={{ WebkitTextFillColor: "#F2C200" }}>CONTÊINERES</span>
               <br />
               EM SOLUÇÕES
             </h1>
 
-            {/* AEO: resposta principal */}
             <p className="text-lg text-white/80 max-w-xl mb-8 leading-relaxed" itemProp="description">
               Mais de 30 anos transformando contêineres em escritórios, módulos habitacionais, estruturas para eventos e operações industriais em todo o Brasil.
             </p>
 
-            {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 mb-12">
               <Link href="/orcamento" className="btn-primary">
-                Solicitar Orçamento
-                <ArrowRight className="w-4 h-4" />
+                Solicitar Orçamento <ArrowRight className="w-4 h-4" />
               </Link>
               <Link href="/produtos" className="btn-secondary">
                 Ver Produtos
               </Link>
             </div>
 
-            {/* Evidências numéricas — AEO */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 rounded-xl overflow-hidden border border-white/10" style={{ background: "rgba(15,35,71,0.7)", backdropFilter: "blur(8px)" }}>
               {EVIDENCES.map((e) => (
                 <EvidenceBadge key={e.label} value={e.value} label={e.label} />
@@ -242,20 +241,16 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 animate-bounce">
           <div className="w-px h-8 bg-white/30" />
           <div className="w-1.5 h-1.5 rounded-full bg-white/50" />
         </div>
       </section>
 
-      {/* ── ANSWER BLOCK — AEO ───────────────────────────────────────────── */}
-      <section className="py-12 section-light" aria-label="O que é a Multiteiner">
+      {/* ── ANSWER BLOCK — AEO ──────────────────────────────────────────── */}
+      <section ref={answerRef} className="py-12 section-light reveal" aria-label="O que é a Multiteiner" id="main-content">
         <div className="container max-w-3xl">
-          <AnswerBlock
-            question="O que é a Multiteiner?"
-            answer={HERO_ANSWER}
-          />
+          <AnswerBlock question="O que é a Multiteiner?" answer={HERO_ANSWER} />
         </div>
       </section>
 
@@ -268,57 +263,49 @@ export default function Home() {
             title="Produtos para cada necessidade"
             subtitle="Do contêiner padrão ao módulo offshore certificado — soluções completas para construção civil, eventos, indústria e logística."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {PRODUCTS.map((p, i) => {
-              const Icon = p.icon;
-              return (
-                <Link
-                  key={p.id}
-                  href={p.href}
-                  className="card-hover group block rounded-xl border border-border bg-white overflow-hidden"
-                  itemScope
-                  itemProp="itemListElement"
-                  itemType="https://schema.org/Product"
-                >
-                  <meta itemProp="position" content={String(i + 1)} />
-                  <div
-                    className="h-2 w-full"
-                    style={{ background: "#F2C200" }}
+          <div ref={productsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
+            {PRODUCTS.map((p, i) => (
+              <Link
+                key={p.id}
+                href={p.href}
+                className="card-hover group block rounded-xl border border-border bg-white overflow-hidden"
+                itemScope
+                itemProp="itemListElement"
+                itemType="https://schema.org/Product"
+              >
+                <meta itemProp="position" content={String(i + 1)} />
+                <div className="h-40 overflow-hidden">
+                  <img
+                    src={p.img}
+                    alt={p.title + " Multiteiner"}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                    width={400}
+                    height={200}
                   />
-                  <div className="p-6">
-                    {p.badge && (
-                      <span className="badge-gold mb-3 inline-block">{p.badge}</span>
-                    )}
-                  <div className="h-36 -mx-6 -mt-6 mb-4 overflow-hidden rounded-t-xl">
-                    <img
-                      src={p.img}
-                      alt={p.title + " Multiteiner"}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                    <h3 className="font-bold text-lg mb-2" style={{ color: "#1A1A2E" }} itemProp="name">
-                      {p.title}
-                    </h3>
-                    <p className="text-sm leading-relaxed mb-4" style={{ color: "#64748B" }} itemProp="description">
-                      {p.desc}
-                    </p>
-                    <span
-                      className="inline-flex items-center gap-1 text-sm font-semibold transition-gap group-hover:gap-2"
-                      style={{ color: "#1B3A6B" }}
-                    >
-                      Saiba mais <ArrowRight className="w-4 h-4" />
-                    </span>
-                  </div>
-                </Link>
-              );
-            })}
+                </div>
+                <div className="p-5">
+                  {p.badge && (
+                    <span className="badge-gold mb-2 inline-block">{p.badge}</span>
+                  )}
+                  <h3 className="font-bold text-lg mb-2" style={{ color: "#1A1A2E" }} itemProp="name">
+                    {p.title}
+                  </h3>
+                  <p className="text-sm leading-relaxed mb-4" style={{ color: "#64748B" }} itemProp="description">
+                    {p.desc}
+                  </p>
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold transition-all group-hover:gap-2" style={{ color: "#1B3A6B" }}>
+                    Saiba mais <ArrowRight className="w-4 h-4" />
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
 
       {/* ── CITABLE PASSAGE — GEO ────────────────────────────────────────── */}
-      <section className="py-16 section-light">
+      <section ref={citableRef} className="py-16 section-light reveal">
         <div className="container max-w-3xl">
           <CitablePassage
             text="Somos a maior empresa no fornecimento de contêineres e módulos habitacionais do Brasil. Nossa qualidade assina as estruturas de eventos internacionais como Rock in Rio e Tomorrowland, reforçando a capacidade que só a Multiteiner tem de atender grandes projetos em tempo recorde."
@@ -336,7 +323,7 @@ export default function Home() {
             subtitle="Cada segmento tem necessidades únicas. A Multiteiner tem a solução certa para cada um."
             light
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          <div ref={segmentsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 stagger-children">
             {SEGMENTS.map((seg) => {
               const Icon = seg.icon;
               return (
@@ -348,15 +335,12 @@ export default function Home() {
                   onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "#F2C200"; }}
                   onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,0.1)"; }}
                 >
-                  <div
-                    className="w-11 h-11 rounded-lg flex items-center justify-center mb-4"
-                    style={{ background: "rgba(242,194,0,0.15)" }}
-                  >
+                  <div className="w-11 h-11 rounded-lg flex items-center justify-center mb-4" style={{ background: "rgba(242,194,0,0.15)" }}>
                     <Icon className="w-5 h-5" style={{ color: "#F2C200" }} />
                   </div>
                   <h3 className="font-bold text-white mb-2">{seg.title}</h3>
                   <p className="text-sm leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.62)" }}>{seg.desc}</p>
-                  <span className="inline-flex items-center gap-1 text-sm font-semibold" style={{ color: "#F2C200" }}>
+                  <span className="inline-flex items-center gap-1 text-sm font-semibold group-hover:gap-2 transition-all" style={{ color: "#F2C200" }}>
                     Ver soluções <ArrowRight className="w-3.5 h-3.5" />
                   </span>
                 </Link>
@@ -374,7 +358,7 @@ export default function Home() {
             title="Diferenciais que fazem a diferença"
             subtitle="Mais de 30 anos de experiência traduzidos em qualidade, agilidade e confiança."
           />
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div ref={benefitsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger-children">
             {BENEFITS.map((b) => (
               <BenefitCard key={b.title} icon={b.icon} title={b.title} description={b.description} />
             ))}
@@ -383,7 +367,7 @@ export default function Home() {
       </section>
 
       {/* ── CLIENTES ─────────────────────────────────────────────────────── */}
-      <section className="py-16 section-light" aria-label="Clientes da Multiteiner">
+      <section ref={clientsRef} className="py-16 section-light reveal" aria-label="Clientes da Multiteiner">
         <div className="container">
           <p className="text-center text-xs font-bold uppercase tracking-widest mb-8" style={{ color: "#94A3B8" }}>
             Confiança de grandes marcas
@@ -392,18 +376,23 @@ export default function Home() {
             {CLIENTS.map((c) => (
               <div
                 key={c.name}
-                className="flex items-center justify-center px-4 py-3 rounded-lg border border-border bg-white"
+                className="flex items-center justify-center px-4 py-3 rounded-lg border border-border bg-white transition-shadow hover:shadow-md"
                 style={{ minWidth: 120, minHeight: 60 }}
               >
                 <img
                   src={c.img}
-                  alt={c.name}
+                  alt={`Logo ${c.name} — Cliente Multiteiner`}
                   className="max-h-10 max-w-[120px] object-contain"
                   loading="lazy"
+                  width={120}
+                  height={40}
                 />
               </div>
             ))}
           </div>
+          <p className="text-center mt-6 text-xs" style={{ color: "#94A3B8" }}>
+            E mais de 500 clientes em todo o Brasil
+          </p>
         </div>
       </section>
 
@@ -415,7 +404,7 @@ export default function Home() {
             title="O que nossos clientes dizem"
             centered
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <div ref={testimonialsRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto stagger-children">
             {[
               {
                 text: "Desde a primeira hora, no seu ingresso como fornecedora do RIR em 2011, a Multiteiner colocou-se muito bem posicionada. E hoje já temos a terceira edição do evento, com a empresa sempre correspondendo às expectativas.",
@@ -439,11 +428,7 @@ export default function Home() {
                     <Star key={i} className="w-4 h-4 fill-current" style={{ color: "#F2C200" }} />
                   ))}
                 </div>
-                <blockquote
-                  className="text-sm leading-relaxed mb-5 italic"
-                  style={{ color: "#475569" }}
-                  itemProp="reviewBody"
-                >
+                <blockquote className="text-sm leading-relaxed mb-5 italic" style={{ color: "#475569" }} itemProp="reviewBody">
                   "{t.text}"
                 </blockquote>
                 <div itemScope itemProp="author" itemType="https://schema.org/Person">
@@ -457,7 +442,7 @@ export default function Home() {
       </section>
 
       {/* ── FAQ — AEO ────────────────────────────────────────────────────── */}
-      <section className="py-20 section-light" aria-labelledby="faq-heading">
+      <section ref={faqRef} className="py-20 section-light reveal" aria-labelledby="faq-heading">
         <div className="container max-w-3xl">
           <SectionHeader
             badge="FAQ"
@@ -468,8 +453,7 @@ export default function Home() {
           <FAQBlock items={FAQ_HOME} />
           <div className="text-center mt-8">
             <Link href="/faq" className="btn-navy">
-              Ver todas as perguntas
-              <ArrowRight className="w-4 h-4" />
+              Ver todas as perguntas <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

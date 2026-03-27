@@ -41,7 +41,29 @@ const FAQ_CATEGORIES = [
     items: [
       { question: "É possível personalizar o contêiner?", answer: "Sim. A Multiteiner oferece personalização completa: layout interno, revestimentos, esquadrias, instalações especiais, pintura e branding. Nossa equipe de engenheiros e arquitetos desenvolve o projeto conforme sua necessidade." },
       { question: "Quais acabamentos internos estão disponíveis?", answer: "Oferecemos piso vinílico, carpete, cerâmica, forro de PVC ou gesso, paredes em drywall ou MDF, esquadrias de alumínio e vidro, entre outros. O acabamento pode ser personalizado conforme o padrão desejado." },
-      { question: "É possível empilhar contêineres?", answer: "Sim. Contêineres ISO são projetados para empilhamento de até 9 unidades carregadas. Para uso como edificação, recomendamos no máximo 2 a 3 andares, com reforço estrutural adequado. Nossa equipe de engenharia realiza o cálculo e projeto." },
+      { question: "É possível empilhar contêiners?", answer: "Sim. Contêiners ISO são projetados para empilhamento de até 9 unidades carregadas. Para uso como edificação, recomendamos no máximo 2 a 3 andares, com reforço estrutural adequado. Nossa equipe de engenharia realiza o cálculo e projeto." },
+      { question: "Posso instalar ar-condicionado no contêiner?", answer: "Sim. A Multiteiner instala sistemas de ar-condicionado split ou de janela, conforme a necessidade do projeto. O contêiner pode receber instalação elétrica completa, incluindo quadro de distribuição, tomadas, iluminação e sistemas de climatização." },
+    ],
+  },
+  {
+    id: "tecnico",
+    label: "Técnico e Normas",
+    items: [
+      { question: "Quais normas regulamentam o uso de contêiners no Brasil?", answer: "Os contêiners no Brasil são regulamentados pelas normas ISO 668 (classificação e dimensões), ISO 1496 (requisitos e testes), ABNT NBR 11381 (contêiners de carga) e, para uso offshore, pela DNV 2.7-1 e EN 12079. A Multiteiner garante conformidade com todas as normas aplicáveis." },
+      { question: "Qual a vida útil de um contêiner transformado?", answer: "Um contêiner de aço Corten bem mantido tem vida útil de 25 a 50 anos. Com manutenção preventiva regular (pintura anticorrosiva, vedações, estrutura), é possível ultrapassar 50 anos de uso. A Multiteiner oferece serviços de manutenção para prolongar a vida útil dos equipamentos." },
+      { question: "O contêiner é resistênte a chuva e vento?", answer: "Sim. Os contêiners ISO são projetados para suportar condições extremas de transporte marítimo, incluindo ventos de até 120 km/h e pressão de empilhamento de 192 toneladas. Com as devidas vedações e manutenção, são completamente estánques à chuva." },
+      { question: "Qual o peso de um contêiner 20 pés vazio?", answer: "Um contêiner 20 pés padrão (dry) pesa aproximadamente 2.230 kg vazio (tara). O 40 pés pesa cerca de 3.750 kg e o 40 pés High Cube, 3.900 kg. Esses pesos devem ser considerados no planejamento estrutural e logístico." },
+      { question: "Contêiner esquenta muito por dentro?", answer: "Sem tratamento térmico, sim. O aço conduz calor e pode elevar a temperatura interna. Por isso, a Multiteiner aplica isolamento térmico (lã de rocha, EPS ou poliuretano) e revestimento interno, reduzindo significativamente a transferência de calor. Com ar-condicionado, o ambiente fica tão confortável quanto qualquer construção convencional." },
+      { question: "Qual a capacidade de carga do piso de um contêiner?", answer: "O piso de um contêiner 20 pés suporta até 3.000 kg/m² de carga distribuída. Para uso habitacional ou comercial, essa capacidade é mais que suficiente. Para cargas concentradas (máquinas pesadas), é recomendável consultar nossa equipe de engenharia." },
+    ],
+  },
+  {
+    id: "offshore",
+    label: "Offshore e Petróleo",
+    items: [
+      { question: "O que é um contêiner offshore?", answer: "Um contêiner offshore é uma unidade especialmente projetada e certificada para uso em plataformas de petróleo e gás. Deve atender à norma DNV 2.7-1 (Det Norske Veritas) e EN 12079, que estabelecem requisitos de segurança para operações de içamento e uso em ambiente marinho." },
+      { question: "A Multiteiner tem certificação DNV?", answer: "Sim. A Multiteiner é uma das poucas empresas brasileiras com contêiners certificados DNV 2.7-1, o padrão internacional para equipamentos offshore. Atendemos Petrobras, Shell, TotalEnergies e outras operadoras do setor de petróleo e gás." },
+      { question: "Quais produtos offshore a Multiteiner oferece?", answer: "A Multiteiner oferece contêiners de carga offshore, módulos de acomodação offshore, unidades de escritório offshore, containers de ferramentas e equipamentos, e unidades especiais para operações em plataformas. Todos certificados DNV 2.7-1 e EN 12079." },
     ],
   },
 ];

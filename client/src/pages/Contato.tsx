@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 import { Link } from "wouter";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -7,30 +7,45 @@ import { AnswerBlock } from "@/components/GeoAeo";
 
 const UNIDADES = [
   {
-    nome: "Unidade Duque de Caxias — RJ (Sede)",
+    nome: "Duque de Caxias — RJ",
+    label: "Sede",
     endereco: "Av. OL 1-B, Quadra C, Lote 10",
+    bairro: "Parque Duque",
     cidade: "Duque de Caxias, RJ",
+    cep: "CEP 25.085-375",
     telefone: "(21) 3534-3400 / 3534-3434",
     tel: "+552135343400",
+    whatsapp: "(21) 99556-8402",
+    whatsappLink: "https://wa.me/5521995568402?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.",
     email: "comercial_rj@multiteiner.com.br",
     principal: true,
   },
   {
-    nome: "Unidade Itapecerica da Serra — SP",
+    nome: "Itapecerica da Serra — SP",
+    label: "Unidade SP",
     endereco: "Estrada Ferreira Guedes, nº 1134",
+    bairro: "Potuverá",
     cidade: "Itapecerica da Serra, SP",
-    telefone: "(11) 4668-5000",
-    tel: "+551146685000",
+    cep: "CEP 06.885-150",
+    telefone: "(11) 4147-1811",
+    tel: "+551141471811",
+    whatsapp: "(11) 94122-3306",
+    whatsappLink: "https://wa.me/5511941223306?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento.",
     email: "comercial_sp@multiteiner.com.br",
     principal: false,
   },
   {
-    nome: "Unidade Macaé — RJ",
+    nome: "Macaé — RJ",
+    label: "Unidade Macaé",
     endereco: "Av. Mem de Sá, nº 809",
+    bairro: "Imboassica",
     cidade: "Macaé, RJ",
-    telefone: "(22) 2773-0900",
-    tel: "+552227730900",
-    email: "comercial_macae@multiteiner.com.br",
+    cep: "CEP 27.925-545",
+    telefone: "(22) 2773-5906",
+    tel: "+552227735906",
+    whatsapp: null,
+    whatsappLink: null,
+    email: "comercial_mc@multiteiner.com.br",
     principal: false,
   },
 ];
@@ -67,6 +82,7 @@ export default function Contato() {
               streetAddress: "Av. OL 1-B, Quadra C, Lote 10",
               addressLocality: "Duque de Caxias",
               addressRegion: "RJ",
+              postalCode: "25085-375",
               addressCountry: "BR",
             },
           },
@@ -92,26 +108,30 @@ export default function Contato() {
         <div className="container max-w-3xl">
           <AnswerBlock
             question="Como entrar em contato com a Multiteiner?"
-            answer="A Multiteiner possui três unidades no Brasil: Duque de Caxias (RJ) — sede, telefone (21) 3534-3400; Itapecerica da Serra (SP), telefone (11) 4668-5000; e Macaé (RJ), telefone (22) 2773-0900. O atendimento é de segunda a sexta, das 8h às 18h. Para orçamentos, a resposta é em até 24 horas úteis."
+            answer="A Multiteiner possui três unidades no Brasil: Duque de Caxias (RJ) — sede, telefone (21) 3534-3400, WhatsApp (21) 99556-8402; Itapecerica da Serra (SP), telefone (11) 4147-1811, WhatsApp (11) 94122-3306; e Macaé (RJ), telefone (22) 2773-5906. O atendimento é de segunda a sexta, das 8h às 18h. Para orçamentos, a resposta é em até 24 horas úteis."
           />
         </div>
       </section>
 
       {/* Unidades */}
       <section className="py-20">
-        <div className="container max-w-4xl">
+        <div className="container max-w-5xl">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {UNIDADES.map((u) => (
               <div
                 key={u.nome}
-                className="p-6 rounded-xl border bg-white"
-                style={{ borderColor: u.principal ? "#F2C200" : "#E2E8F0", borderWidth: u.principal ? 2 : 1 }}
+                className="p-6 rounded-xl bg-white shadow-sm"
+                style={{ border: u.principal ? "2px solid #F2C200" : "1px solid #E2E8F0" }}
                 itemScope
                 itemType="https://schema.org/LocalBusiness"
               >
-                {u.principal && (
-                  <span className="badge-gold mb-3 inline-block">Sede</span>
-                )}
+                <span
+                  className="inline-block text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-4"
+                  style={{ background: u.principal ? "#F2C200" : "#EEF2FF", color: u.principal ? "#1B3A6B" : "#1B3A6B" }}
+                >
+                  {u.label}
+                </span>
+
                 <h2 className="font-bold text-base mb-4 leading-snug" style={{ color: "#1B3A6B" }} itemProp="name">
                   {u.nome}
                 </h2>
@@ -121,22 +141,25 @@ export default function Contato() {
                     <MapPin className="w-4 h-4 mt-0.5 shrink-0" style={{ color: "#F2C200" }} />
                     <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
                       <p className="text-sm font-medium" style={{ color: "#1A1A2E" }} itemProp="streetAddress">{u.endereco}</p>
-                      <p className="text-xs mt-0.5" style={{ color: "#64748B" }} itemProp="addressLocality">{u.cidade}</p>
+                      <p className="text-xs mt-0.5" style={{ color: "#64748B" }}>{u.bairro}</p>
+                      <p className="text-xs" style={{ color: "#64748B" }} itemProp="addressLocality">{u.cidade}</p>
+                      <p className="text-xs" style={{ color: "#94A3B8" }} itemProp="postalCode">{u.cep}</p>
                     </div>
                   </div>
 
-                  <a
-                    href={`tel:${u.tel}`}
-                    className="flex items-center gap-3 transition-opacity hover:opacity-80"
-                  >
+                  <a href={`tel:${u.tel}`} className="flex items-center gap-3 transition-opacity hover:opacity-80">
                     <Phone className="w-4 h-4 shrink-0" style={{ color: "#F2C200" }} />
                     <span className="text-sm font-semibold" style={{ color: "#1B3A6B" }} itemProp="telephone">{u.telefone}</span>
                   </a>
 
-                  <a
-                    href={`mailto:${u.email}`}
-                    className="flex items-center gap-3 transition-opacity hover:opacity-80"
-                  >
+                  {u.whatsapp && u.whatsappLink && (
+                    <a href={u.whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 transition-opacity hover:opacity-80">
+                      <MessageCircle className="w-4 h-4 shrink-0" style={{ color: "#25D366" }} />
+                      <span className="text-sm font-semibold" style={{ color: "#25D366" }}>WhatsApp {u.whatsapp}</span>
+                    </a>
+                  )}
+
+                  <a href={`mailto:${u.email}`} className="flex items-center gap-3 transition-opacity hover:opacity-80">
                     <Mail className="w-4 h-4 shrink-0" style={{ color: "#F2C200" }} />
                     <span className="text-xs" style={{ color: "#64748B" }}>{u.email}</span>
                   </a>

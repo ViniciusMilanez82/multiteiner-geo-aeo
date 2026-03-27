@@ -20,6 +20,7 @@ const Blog = lazy(() => import("./pages/Blog"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
 const Orcamento = lazy(() => import("./pages/Orcamento"));
 const Contato = lazy(() => import("./pages/Contato"));
+const Guia = lazy(() => import("./pages/Guia"));
 
 function PageLoader() {
   return (
@@ -55,6 +56,7 @@ function Router() {
         <Route path="/blog/:slug" component={BlogPost} />
         <Route path="/orcamento" component={Orcamento} />
         <Route path="/contato" component={Contato} />
+        <Route path="/guia" component={Guia} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

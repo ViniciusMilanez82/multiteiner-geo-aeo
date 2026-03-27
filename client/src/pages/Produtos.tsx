@@ -15,6 +15,7 @@ const PRODUCTS = [
     badge: "Mais vendido",
     uses: ["Escritório de obra", "Depósito", "Loja", "Refeitório", "Enfermaria", "Sala de aula"],
     href: "/produtos/conteineres",
+    img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/conteineres_97f0bba9.png",
   },
   {
     slug: "modulos",
@@ -25,6 +26,7 @@ const PRODUCTS = [
     badge: null,
     uses: ["Alojamento de trabalhadores", "Base de operações", "Acampamento industrial", "Estrutura para eventos"],
     href: "/produtos/modulos",
+    img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/modulos_7c6d7b76.png",
   },
   {
     slug: "offshore",
@@ -35,6 +37,7 @@ const PRODUCTS = [
     badge: "Certificado DNV",
     uses: ["Plataformas de petróleo", "Embarcações", "Terminais portuários", "Operações costeiras"],
     href: "/produtos/offshore",
+    img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/offshore_a96872ad.png",
   },
   {
     slug: "frigorificos",
@@ -45,6 +48,7 @@ const PRODUCTS = [
     badge: null,
     uses: ["Armazenamento de alimentos", "Medicamentos", "Eventos e festivais", "Logística refrigerada"],
     href: "/produtos/frigorificos",
+    img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/frigorificos_e320a8f7.png",
   },
 ];
 
@@ -103,10 +107,16 @@ export default function Produtos() {
                   <meta itemProp="position" content={String(i + 1)} />
                   {/* Visual */}
                   <div
-                    className="w-full lg:w-2/5 rounded-xl flex items-center justify-center min-h-56"
-                    style={{ background: i % 2 === 0 ? "rgba(27,58,107,0.06)" : "rgba(242,194,0,0.08)", border: "1px solid #E2E8F0" }}
+                    className="w-full lg:w-2/5 rounded-xl overflow-hidden min-h-56"
+                    style={{ border: "1px solid #E2E8F0" }}
                   >
-                    <Icon className="w-24 h-24" style={{ color: i % 2 === 0 ? "#1B3A6B" : "#C9A000", opacity: 0.3 }} />
+                    <img
+                      src={p.img}
+                      alt={`${p.title} — Multiteiner`}
+                      className="w-full h-full object-cover min-h-56"
+                      loading="lazy"
+                      itemProp="image"
+                    />
                   </div>
                   {/* Content */}
                   <div className="flex-1">
