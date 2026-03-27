@@ -91,6 +91,20 @@ export default function Comparativos() {
         </div>
       </section>
 
+      {/* TL;DR */}
+      <section className="py-10 section-light">
+        <div className="container max-w-4xl">
+          <div className="rounded-xl border-l-4 p-6" style={{ borderColor: "#F2C200", background: "rgba(242,194,0,0.06)" }}>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#1B3A6B" }}>Resumo rápido — 3 comparativos</p>
+            <ul className="space-y-1.5 text-sm" style={{ color: "#475569" }}>
+              <li><strong>Contêiner vs. Módulo:</strong> Contêiner = uso pontual e rápido. Módulo = acomodação completa para equipes.</li>
+              <li><strong>Alvenaria vs. Contêiner:</strong> Contêiner é até 30x mais rápido e 100% relocável.</li>
+              <li><strong>Locação vs. Compra:</strong> Locação até 18 meses; compra para uso permanente.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20">
         <div className="container max-w-4xl">
           <div className="space-y-20">
@@ -98,7 +112,7 @@ export default function Comparativos() {
               <div key={comp.id} id={comp.id}>
                 <SectionHeader
                   badge="Comparativo"
-                  title={comp.title}
+                  title={comp.question}
                 />
                 <AnswerBlock
                   question={comp.question}

@@ -196,3 +196,33 @@
 - [x] Substituir imagens antigas na Guia.tsx pelas novas
 - [x] Validar renderização visual no browser
 - [x] Corrigir planta escritório: duas janelas centralizadas na parede lateral (não uma no canto)
+
+## Fase 16: Redesign Completo da Página Guia — UX e Conteúdo
+
+- [ ] Analisar problemas de UX: informação solta, falta de hierarquia, conteúdo vago
+- [ ] Redesenhar com navegação lateral sticky (sumário sempre visível)
+- [ ] Criar cards visuais organizados por categoria (não texto solto)
+- [ ] Aprofundar conteúdo: dados específicos, valores reais, exemplos concretos
+- [ ] Adicionar tabelas comparativas detalhadas (não apenas texto)
+- [ ] Melhorar tipografia e espaçamento para leitura confortável
+- [ ] Adicionar indicadores visuais de progresso/seção ativa
+- [ ] Integrar CTAs contextuais dentro das seções (não apenas no final)
+- [ ] Validar renderização e responsividade
+
+## Fase 17: Correções GEO/AEO em Todas as Páginas
+- [x] GUIA: Sidebar sticky com indicador de seção ativa
+- [x] GUIA: Converter headings em perguntas
+- [x] GUIA: Melhorar TL;DR e conteúdo mais denso
+- [x] GUIA: Adicionar tabs/accordions para interatividade
+- [x] HOME: Adicionar TL;DR, converter headings em perguntas
+- [x] SOBRE: Sidebar sticky, converter H1 em pergunta
+- [x] PRODUTOS: TL;DR, headings perguntas, dados concretos, filtros
+- [x] PRODUTODETALHE: TL;DR, headings perguntas, sidebar sticky
+- [x] SEGMENTOS: TL;DR, headings perguntas, dados quantitativos
+- [x] SEGMENTODETALHE: TL;DR, headings perguntas, sidebar sticky
+- [x] COMPARATIVOS: TL;DR, headings perguntas, sidebar sticky, tabs
+- [x] FAQ: Sidebar sticky, accordions, links internos
+- [x] BLOG: TL;DR, headings perguntas, sidebar categorias, filtros
+- [x] BLOGPOST: Headings perguntas, sidebar sticky sumário
+- [x] ORCAMENTO: TL;DR, headings perguntas, dados, FAQ, expandir conteúdo
+- [x] CONTATO: TL;DR, headings perguntas, FAQ

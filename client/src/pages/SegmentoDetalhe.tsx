@@ -115,7 +115,7 @@ export default function SegmentoDetalhe() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div>
-              <SectionHeader badge="Soluções" title="O que fornecemos" />
+              <SectionHeader badge="Soluções" title="Quais soluções a Multiteiner oferece?" />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {segment.solutions.map((s) => (
                   <div key={s} className="flex items-center gap-2.5 p-3 rounded-lg border border-border bg-white">
@@ -134,7 +134,7 @@ export default function SegmentoDetalhe() {
               </div>
             </div>
             <div>
-              <SectionHeader badge="FAQ" title="Perguntas frequentes" />
+              <SectionHeader badge="FAQ" title="Dúvidas sobre este segmento?" />
               <FAQBlock items={segment.faq} />
               <div className="mt-8">
                 <Link href="/orcamento" className="btn-primary inline-flex">

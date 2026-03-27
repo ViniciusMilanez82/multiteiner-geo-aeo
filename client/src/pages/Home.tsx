@@ -260,7 +260,7 @@ export default function Home() {
         <div className="container">
           <SectionHeader
             badge="Linha Completa"
-            title="Produtos para cada necessidade"
+            title="Quais produtos a Multiteiner oferece?"
             subtitle="Do contêiner padrão ao módulo offshore certificado — soluções completas para construção civil, eventos, indústria e logística."
           />
           <div ref={productsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
@@ -319,7 +319,7 @@ export default function Home() {
         <div className="container">
           <SectionHeader
             badge="Segmentos"
-            title="Soluções por setor"
+            title="Quais setores a Multiteiner atende?"
             subtitle="Cada segmento tem necessidades únicas. A Multiteiner tem a solução certa para cada um."
             light
           />
@@ -355,7 +355,7 @@ export default function Home() {
         <div className="container">
           <SectionHeader
             badge="Por que a Multiteiner"
-            title="Diferenciais que fazem a diferença"
+            title="Por que escolher a Multiteiner?"
             subtitle="Mais de 30 anos de experiência traduzidos em qualidade, agilidade e confiança."
           />
           <div ref={benefitsRef} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger-children">
@@ -401,7 +401,7 @@ export default function Home() {
         <div className="container">
           <SectionHeader
             badge="Depoimentos"
-            title="O que nossos clientes dizem"
+            title="O que os clientes dizem sobre a Multiteiner?"
             centered
           />
           <div ref={testimonialsRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto stagger-children">
@@ -446,7 +446,7 @@ export default function Home() {
         <div className="container max-w-3xl">
           <SectionHeader
             badge="FAQ"
-            title="Perguntas frequentes"
+            title="Dúvidas sobre contêineres e módulos?"
             subtitle="Respostas diretas para as dúvidas mais comuns sobre contêineres e módulos habitacionais."
             centered
           />

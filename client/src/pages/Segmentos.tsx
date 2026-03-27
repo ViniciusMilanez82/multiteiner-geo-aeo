@@ -9,7 +9,7 @@ const SEGMENTS = [
   {
     slug: "construcao-civil",
     title: "Construção Civil",
-    desc: "Escritórios de obra, alojamentos, refeitórios e depósitos para canteiros de qualquer porte. A Multiteiner é parceira das maiores construtoras do Brasil.",
+    desc: "Escritórios de obra, alojamentos NR-18, refeitórios e depósitos para canteiros de qualquer porte. Instalação em 1 a 5 dias úteis. A Multiteiner é parceira das maiores construtoras do Brasil, com mais de 3.000 projetos entregues neste segmento.",
     icon: Building2,
     uses: ["Escritório de obra", "Alojamento de trabalhadores", "Refeitório", "Depósito de materiais", "Enfermaria", "Sala de reunião"],
     href: "/segmentos/construcao-civil",
@@ -17,7 +17,7 @@ const SEGMENTS = [
   {
     slug: "eventos",
     title: "Eventos",
-    desc: "Estruturas para Rock in Rio, Tomorrowland e os maiores festivais do Brasil. Montagem rápida, desmontagem ágil, qualidade certificada.",
+    desc: "Estruturas para Rock in Rio, Tomorrowland, Carnaval do Rio e os maiores festivais do Brasil. Montagem em 48h a 7 dias, desmontagem ágil. Mais de 500 eventos atendidos com camarotes, bares, bilheterias e backstage.",
     icon: Calendar,
     uses: ["Camarotes VIP", "Bares e food trucks", "Bilheterias", "Backstage", "Frigoríficos", "Sanitários"],
     href: "/segmentos/eventos",
@@ -25,7 +25,7 @@ const SEGMENTS = [
   {
     slug: "operacoes-industriais",
     title: "Operações Industriais",
-    desc: "Módulos para mineração, petróleo, gás e operações em áreas remotas. Soluções certificadas para ambientes extremos.",
+    desc: "Módulos certificados DNV-ST-E271 para mineração, petróleo, gás e operações em áreas remotas. Clientes como Petrobras, Vale e ThyssenKrupp. Soluções para ambientes extremos com testes de içamento e estanqueidade.",
     icon: Factory,
     uses: ["Base de operações", "Alojamento remoto", "Laboratório de campo", "Sala de controle", "Offshore", "Depósito de insumos"],
     href: "/segmentos/operacoes-industriais",
@@ -33,7 +33,7 @@ const SEGMENTS = [
   {
     slug: "logistica",
     title: "Logística",
-    desc: "Armazenagem, distribuição e pontos de apoio logístico com agilidade e segurança. Soluções temporárias ou permanentes.",
+    desc: "Armazenagem, distribuição e pontos de apoio logístico com instalação em até 48h. Contêineres dry van, frigoríficos (-20°C a +20°C) e escritórios logísticos. Soluções temporárias ou permanentes para toda a cadeia de suprimentos.",
     icon: Truck,
     uses: ["Depósito temporário", "Centro de distribuição", "Ponto de apoio", "Armazenagem refrigerada", "Escritório logístico", "Portaria"],
     href: "/segmentos/logistica",

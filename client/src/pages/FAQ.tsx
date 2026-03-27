@@ -106,7 +106,7 @@ export default function FAQ() {
       <section className="py-12 section-light">
         <div className="container max-w-3xl">
           <AnswerBlock
-            question="O que você precisa saber sobre contêineres Multiteiner"
+            question="Quais são as dúvidas mais comuns sobre contêineres e módulos?"
             answer="A Multiteiner é especialista em transformação de contêineres e módulos habitacionais há mais de 30 anos. Oferecemos locação e venda, com entrega e montagem em todo o Brasil. Todos os equipamentos são certificados ABNT. Atendemos construção civil, eventos, operações industriais e logística."
           />
         </div>

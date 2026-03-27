@@ -1,16 +1,16 @@
 import { Link } from "wouter";
-import { ArrowRight, Building2, Users, Shield, Zap } from "lucide-react";
+import { ArrowRight, Building2, Users, Shield, Zap, CheckCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import SEOHead, { makeBreadcrumbSchema } from "@/components/SEOHead";
-import { SectionHeader, AnswerBlock, CTASection, EntityBadge } from "@/components/GeoAeo";
+import SEOHead, { makeBreadcrumbSchema, makeFAQSchema } from "@/components/SEOHead";
+import { SectionHeader, AnswerBlock, CTASection, EntityBadge, FAQBlock } from "@/components/GeoAeo";
 
 const PRODUCTS = [
   {
     slug: "conteineres",
     title: "Contêineres",
     subtitle: "Escritórios, vestiários, almoxarifados, dormitórios e mais",
-    desc: "Temos a solução perfeita para atender a sua necessidade. São mais de 30 anos de experiência no segmento de locação e venda de contêineres. Nosso portfólio contém modelos diversificados: escritórios, vestiários, almoxarifados, dormitórios, entre outros.",
+    desc: "Contêineres marítimos ISO (20 e 40 pés) transformados em escritórios, vestiários, almoxarifados, dormitórios, lojas e depósitos. Fabricados em aço Corten com vida útil de 25 a 50 anos. Disponíveis para locação ou venda, com entrega em todo o Brasil.",
     icon: Building2,
     badge: "Mais vendido",
     uses: ["Obras", "Eventos", "Construções", "Feiras", "Estruturas comerciais"],
@@ -21,7 +21,7 @@ const PRODUCTS = [
     slug: "modulos",
     title: "Módulos Habitacionais",
     subtitle: "Soluções modulares para diversas aplicações",
-    desc: "Os módulos habitacionais podem ser adaptados para diversas aplicações, com praticidade no transporte e montagem. A instalação dos módulos pode ser temporária ou permanente, e eles podem ser empilhados em até três pavimentos.",
+    desc: "Módulos fabricados com perfis metálicos e painéis sanduíche (EPS ou PIR), com isolamento térmico e acústico superior. Empilháveis em até 3 pavimentos. Atendem NR-18 e NBR 15575. Instalação temporária ou permanente, com montagem em 3 a 15 dias.",
     icon: Users,
     badge: null,
     uses: ["Eventos", "Postos de saúde", "Escolas", "Refeitórios", "Escritórios", "Auditórios", "Stand de vendas", "Sanitários", "Dormitórios"],
@@ -32,7 +32,7 @@ const PRODUCTS = [
     slug: "offshore",
     title: "Offshore",
     subtitle: "Certificados para operações marítimas e petrolíferas",
-    desc: "No setor petrolífero, a Multiteiner se destaca por adaptar e transformar contêineres em diversas vivências nas plataformas: alojamentos, lavanderias e sanitários. Todos os equipamentos seguem os mais altos padrões de qualidade e normas internacionais (IMO).",
+    desc: "Contêineres certificados DNV-ST-E271 (antiga DNV 2.7-1) para operações em plataformas marítimas. Alojamentos, lavanderias, sanitários e cozinhas com testes de içamento dinâmico, impacto e estanqueidade. Conformidade com normas IMO e Petrobras.",
     icon: Shield,
     badge: "Certificado DNV",
     uses: ["Transporte de cargas", "Alojamentos", "Cozinhas", "Lavanderias", "Sanitários"],
@@ -43,7 +43,7 @@ const PRODUCTS = [
     slug: "frigorificos",
     title: "Frigoríficos",
     subtitle: "Câmaras frigoríficas móveis de -20°C a +20°C",
-    desc: "Os contêineres ou câmaras frigoríficas são soluções inteligentes, móveis, práticas e econômicas para conservar produtos em baixas temperaturas. Fáceis de operar, capazes de conservar climatizados quaisquer produtos perecíveis.",
+    desc: "Câmaras frigoríficas móveis com controle de temperatura de -20°C a +20°C. Equipadas com compressores de alta eficiência, painéis isotérmicos e sistema de monitoramento remoto. Ideais para alimentos, medicamentos, flores e insumos industriais.",
     icon: Zap,
     badge: null,
     uses: ["Açougues", "Supermercados", "Sorveterias", "Fábricas de gelo", "Fabricantes de polpa de fruta", "Peixarias"],
@@ -79,12 +79,21 @@ export default function Produtos() {
         </div>
       </section>
 
-      {/* Answer Block */}
+      {/* TL;DR + Answer Block */}
       <section className="py-12 section-light">
         <div className="container max-w-3xl">
+          <div className="rounded-xl border-l-4 p-6 mb-8" style={{ borderColor: "#F2C200", background: "rgba(242,194,0,0.06)" }}>
+            <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#1B3A6B" }}>Resumo rápido</p>
+            <ul className="space-y-2 text-sm" style={{ color: "#475569" }}>
+              <li className="flex gap-2"><CheckCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#1B3A6B" }} /> <span><strong>4 linhas de produtos:</strong> Contêineres, Módulos Habitacionais, Offshore e Frigoríficos</span></li>
+              <li className="flex gap-2"><CheckCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#1B3A6B" }} /> <span><strong>Locação ou venda</strong> com entrega em todo o Brasil</span></li>
+              <li className="flex gap-2"><CheckCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#1B3A6B" }} /> <span><strong>Certificações:</strong> ISO 668, DNV-ST-E271, NR-18, NBR 15575</span></li>
+              <li className="flex gap-2"><CheckCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#1B3A6B" }} /> <span><strong>+5.000 projetos</strong> entregues em 30+ anos de atuação</span></li>
+            </ul>
+          </div>
           <AnswerBlock
             question="Quais produtos a Multiteiner oferece?"
-            answer="A Multiteiner oferece quatro linhas principais: Contêineres transformados (escritórios, depósitos, lojas), Módulos Habitacionais (acomodações completas para obras e eventos), Offshore (certificados DNV para plataformas marítimas) e Frigoríficos (controle de temperatura de -20°C a +20°C). Todos disponíveis para locação ou venda, com entrega em todo o Brasil."
+            answer="A Multiteiner oferece quatro linhas principais: Contêineres transformados (escritórios, depósitos, lojas, vestiários), Módulos Habitacionais (acomodações completas com painéis sanduíche para obras e eventos), Offshore (certificados DNV-ST-E271 para plataformas marítimas) e Frigoríficos (controle de temperatura de -20°C a +20°C). Todos disponíveis para locação ou venda, com entrega e montagem em todo o Brasil."
           />
         </div>
       </section>

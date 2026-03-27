@@ -90,9 +90,15 @@ export default function Orcamento() {
           <h1 className="text-4xl lg:text-5xl font-extrabold text-white mb-4 leading-tight">
             Solicite seu <span style={{ color: "#F2C200" }}>orçamento</span>
           </h1>
-          <p className="text-lg leading-relaxed" style={{ color: "rgba(255,255,255,0.75)" }}>
-            Preencha o formulário e nossa equipe entrará em contato em até 24 horas úteis.
+          <p className="text-lg leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.75)" }}>
+            Preencha o formulário e nossa equipe entrará em contato em até 24 horas úteis. Orçamento gratuito e sem compromisso.
           </p>
+          <div className="flex flex-wrap gap-4 text-sm" style={{ color: "rgba(255,255,255,0.55)" }}>
+            <span>✓ Resposta em até 24h</span>
+            <span>✓ Orçamento gratuito</span>
+            <span>✓ Sem compromisso</span>
+            <span>✓ Atendimento em todo o Brasil</span>
+          </div>
         </div>
       </section>
 
@@ -111,7 +117,7 @@ export default function Orcamento() {
             {/* Form */}
             <div className="lg:col-span-2">
               <form onSubmit={handleSubmit} className="space-y-5" itemScope itemType="https://schema.org/ContactPoint">
-                <SectionHeader badge="Seus dados" title="Informações de contato" />
+                <SectionHeader badge="Seus dados" title="Quem está solicitando?" />
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-widest mb-1.5" style={{ color: "#64748B" }}>Nome *</label>
@@ -151,7 +157,7 @@ export default function Orcamento() {
                   </div>
                 </div>
 
-                <SectionHeader badge="Seu projeto" title="Detalhes da necessidade" />
+                <SectionHeader badge="Seu projeto" title="Qual solução você precisa?" />
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-widest mb-1.5" style={{ color: "#64748B" }}>Produto</label>
@@ -216,7 +222,7 @@ export default function Orcamento() {
 
             {/* Contact info */}
             <div>
-              <SectionHeader badge="Contato" title="Fale conosco" />
+              <SectionHeader badge="Contato direto" title="Prefere falar por telefone ou e-mail?" />
               <div className="space-y-4">
                 <a href="tel:+552135343400" className="flex items-start gap-3 p-4 rounded-xl border border-border bg-white transition-colors hover:border-blue-200">
                   <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ background: "rgba(27,58,107,0.08)" }}>

@@ -207,7 +207,7 @@ export default function Sobre() {
         <div className="container">
           <SectionHeader
             badge="Identidade"
-            title="Missão, Visão e Valores"
+            title="Quais são a missão, visão e valores da Multiteiner?"
             subtitle="Os princípios que guiam cada decisão e cada projeto da Multiteiner há 30 anos."
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -221,7 +221,7 @@ export default function Sobre() {
       {/* Timeline */}
       <section className="py-20">
         <div className="container max-w-3xl">
-          <SectionHeader badge="Nossa história" title="Três décadas de inovação" subtitle="De uma empresa regional a referência nacional — 30 anos de crescimento e projetos marcantes." />
+          <SectionHeader badge="Nossa história" title="Como a Multiteiner cresceu em 30 anos?" subtitle="De uma empresa regional a referência nacional — 30 anos de crescimento e projetos marcantes." />
           <div className="relative">
             <div className="absolute left-7 top-0 bottom-0 w-0.5 hidden md:block" style={{ background: "linear-gradient(to bottom, #F2C200, #1B3A6B)" }} />
             <div className="space-y-6">
@@ -291,7 +291,7 @@ export default function Sobre() {
       {/* Depoimentos reais */}
       <section className="py-20">
         <div className="container max-w-4xl">
-          <SectionHeader badge="Depoimentos" title="O que dizem nossos clientes" />
+          <SectionHeader badge="Depoimentos" title="O que os clientes dizem sobre a Multiteiner?" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-7 rounded-2xl bg-white border" style={{ borderColor: "#E2E8F0" }}>
               <div className="flex items-center gap-1 mb-4">

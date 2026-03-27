@@ -135,7 +135,7 @@ export default function Blog() {
 
       <section className="py-20">
         <div className="container">
-          <SectionHeader badge="Artigos" title="Últimas publicações" />
+          <SectionHeader badge="Artigos" title="O que você quer aprender sobre contêineres?" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {POSTS.map((post) => (
               <Link

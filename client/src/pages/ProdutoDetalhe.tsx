@@ -185,7 +185,7 @@ export default function ProdutoDetalhe() {
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div>
-              <SectionHeader badge="Vantagens" title="Por que escolher" />
+              <SectionHeader badge="Vantagens" title="Por que escolher este produto?" />
               <ul className="space-y-3 mt-6">
                 {product.vantagens.map((v, i) => (
                   <li key={i} className="flex items-start gap-3">
@@ -196,7 +196,7 @@ export default function ProdutoDetalhe() {
               </ul>
             </div>
             <div>
-              <SectionHeader badge="Aplicações" title="Onde utilizar" />
+              <SectionHeader badge="Aplicações" title="Onde este produto é utilizado?" />
               <ul className="space-y-3 mt-6">
                 {product.aplicacoes.map((a, i) => (
                   <li key={i} className="flex items-start gap-3">
@@ -215,11 +215,11 @@ export default function ProdutoDetalhe() {
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div>
-              <SectionHeader badge="Especificações" title="Dados técnicos" />
+              <SectionHeader badge="Especificações" title="Quais são as especificações técnicas?" />
               <SpecTable title="Características Técnicas" rows={product.specs} />
             </div>
             <div>
-              <SectionHeader badge="FAQ" title="Perguntas frequentes" />
+              <SectionHeader badge="FAQ" title="Dúvidas sobre este produto?" />
               <FAQBlock items={product.faq} />
               <div className="mt-8">
                 <Link href="/orcamento" className="btn-primary inline-flex">
