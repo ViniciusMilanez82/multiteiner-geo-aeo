@@ -30,6 +30,7 @@ const PRODUCTS = [
     href: "/produtos/conteineres",
     icon: Building2,
     badge: "Mais vendido",
+    img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/conteineres_97f0bba9.png",
   },
   {
     id: "modulos",
@@ -38,6 +39,7 @@ const PRODUCTS = [
     href: "/produtos/modulos",
     icon: Users,
     badge: null,
+    img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/modulos_7c6d7b76.png",
   },
   {
     id: "offshore",
@@ -46,6 +48,7 @@ const PRODUCTS = [
     href: "/produtos/offshore",
     icon: Shield,
     badge: "Certificado DNV",
+    img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/offshore_a96872ad.png",
   },
   {
     id: "frigorificos",
@@ -54,6 +57,7 @@ const PRODUCTS = [
     href: "/produtos/frigorificos",
     icon: Zap,
     badge: null,
+    img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/frigorificos_e320a8f7.png",
   },
 ];
 
@@ -137,7 +141,11 @@ const FAQ_HOME = [
 ];
 
 const CLIENTS = [
-  "Petrobras", "Rock in Rio", "Tomorrowland", "Bob's", "ThyssenKrupp", "Vale",
+  { name: "Petrobras", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_petrobras_324c770e.jpg" },
+  { name: "Rock in Rio", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_rir_af05545a.jpg" },
+  { name: "Coca-Cola", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_coca_dff8b804.jpg" },
+  { name: "Globo", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_globo_3334fb53.jpg" },
+  { name: "ThyssenKrupp", img: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/cliente_thyssenkrupp_e54452ce.jpg" },
 ];
 
 /* ── Componente ──────────────────────────────────────────────────────────── */
@@ -183,10 +191,10 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1600&q=80')",
+            backgroundImage: "url('https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/slide_01_801ee9e9.jpg')",
           }}
           role="img"
-          aria-label="Porto com contêineres — Multiteiner"
+          aria-label="Contêineres Multiteiner — Maior empresa de contêineres do Brasil"
         />
         <div className="hero-overlay absolute inset-0" />
 
@@ -281,12 +289,14 @@ export default function Home() {
                     {p.badge && (
                       <span className="badge-gold mb-3 inline-block">{p.badge}</span>
                     )}
-                    <div
-                      className="w-12 h-12 rounded-lg flex items-center justify-center mb-4"
-                      style={{ background: "rgba(27,58,107,0.08)" }}
-                    >
-                      <Icon className="w-6 h-6" style={{ color: "#1B3A6B" }} />
-                    </div>
+                  <div className="h-36 -mx-6 -mt-6 mb-4 overflow-hidden rounded-t-xl">
+                    <img
+                      src={p.img}
+                      alt={p.title + " Multiteiner"}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                     <h3 className="font-bold text-lg mb-2" style={{ color: "#1A1A2E" }} itemProp="name">
                       {p.title}
                     </h3>
@@ -381,11 +391,16 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-center gap-8">
             {CLIENTS.map((c) => (
               <div
-                key={c}
-                className="px-6 py-3 rounded-lg border border-border bg-white font-bold text-sm"
-                style={{ color: "#1B3A6B" }}
+                key={c.name}
+                className="flex items-center justify-center px-4 py-3 rounded-lg border border-border bg-white"
+                style={{ minWidth: 120, minHeight: 60 }}
               >
-                {c}
+                <img
+                  src={c.img}
+                  alt={c.name}
+                  className="max-h-10 max-w-[120px] object-contain"
+                  loading="lazy"
+                />
               </div>
             ))}
           </div>

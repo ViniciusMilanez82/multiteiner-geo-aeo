@@ -218,22 +218,22 @@ export default function Orcamento() {
             <div>
               <SectionHeader badge="Contato" title="Fale conosco" />
               <div className="space-y-4">
-                <a href="tel:+551100000000" className="flex items-start gap-3 p-4 rounded-xl border border-border bg-white transition-colors hover:border-blue-200">
+                <a href="tel:+552135343400" className="flex items-start gap-3 p-4 rounded-xl border border-border bg-white transition-colors hover:border-blue-200">
                   <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ background: "rgba(27,58,107,0.08)" }}>
                     <Phone className="w-5 h-5" style={{ color: "#1B3A6B" }} />
                   </div>
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest mb-0.5" style={{ color: "#94A3B8" }}>Telefone</p>
-                    <p className="font-semibold text-sm" style={{ color: "#1A1A2E" }}>(11) 0000-0000</p>
+                    <p className="font-semibold text-sm" style={{ color: "#1A1A2E" }}>(21) 3534-3400</p>
                   </div>
                 </a>
-                <a href="mailto:contato@multiteiner.com.br" className="flex items-start gap-3 p-4 rounded-xl border border-border bg-white transition-colors hover:border-blue-200">
+                <a href="mailto:comercial_rj@multiteiner.com.br" className="flex items-start gap-3 p-4 rounded-xl border border-border bg-white transition-colors hover:border-blue-200">
                   <div className="w-10 h-10 rounded-lg flex items-center justify-center shrink-0" style={{ background: "rgba(27,58,107,0.08)" }}>
                     <Mail className="w-5 h-5" style={{ color: "#1B3A6B" }} />
                   </div>
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest mb-0.5" style={{ color: "#94A3B8" }}>E-mail</p>
-                    <p className="font-semibold text-sm" style={{ color: "#1A1A2E" }}>contato@multiteiner.com.br</p>
+                    <p className="font-semibold text-sm" style={{ color: "#1A1A2E" }}>comercial_rj@multiteiner.com.br</p>
                   </div>
                 </a>
                 <div className="flex items-start gap-3 p-4 rounded-xl border border-border bg-white">
@@ -242,7 +242,7 @@ export default function Orcamento() {
                   </div>
                   <div>
                     <p className="text-xs font-bold uppercase tracking-widest mb-0.5" style={{ color: "#94A3B8" }}>Localização</p>
-                    <p className="font-semibold text-sm" style={{ color: "#1A1A2E" }}>São Paulo, SP — Brasil</p>
+                    <p className="font-semibold text-sm" style={{ color: "#1A1A2E" }}>Duque de Caxias (RJ) · Itapecerica da Serra (SP) · Macaé (RJ)</p>
                     <p className="text-xs mt-0.5" style={{ color: "#94A3B8" }}>Atendemos todo o Brasil</p>
                   </div>
                 </div>

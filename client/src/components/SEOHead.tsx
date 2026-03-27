@@ -84,9 +84,9 @@ export const organizationSchema = {
   url: "https://www.multiteiner.com.br",
   logo: {
     "@type": "ImageObject",
-    url: "https://www.multiteiner.com.br/logo.png",
-    width: 200,
-    height: 60,
+    url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_8b88d7e1.png",
+    width: 163,
+    height: 76,
   },
   description:
     "Maior empresa brasileira em transformação de contêineres e módulos habitacionais, com mais de 30 anos de experiência em soluções para construção civil, eventos, operações industriais e logística.",
@@ -103,14 +103,49 @@ export const organizationSchema = {
   sameAs: [
     "https://www.linkedin.com/company/multiteiner",
     "https://www.instagram.com/multiteiner",
+    "https://www.facebook.com/multiteiner",
   ],
-  contactPoint: {
-    "@type": "ContactPoint",
-    telephone: "+55-11-0000-0000",
-    contactType: "sales",
-    areaServed: "BR",
-    availableLanguage: "Portuguese",
-  },
+  address: [
+    {
+      "@type": "PostalAddress",
+      streetAddress: "Av. OL 1-B, Quadra C, Lote 10",
+      addressLocality: "Duque de Caxias",
+      addressRegion: "RJ",
+      postalCode: "25250-000",
+      addressCountry: "BR",
+    },
+    {
+      "@type": "PostalAddress",
+      streetAddress: "Estrada Ferreira Guedes, nº 1134",
+      addressLocality: "Itapecerica da Serra",
+      addressRegion: "SP",
+      addressCountry: "BR",
+    },
+    {
+      "@type": "PostalAddress",
+      streetAddress: "Av. Mem de Sá, nº 809",
+      addressLocality: "Macaé",
+      addressRegion: "RJ",
+      addressCountry: "BR",
+    },
+  ],
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      telephone: "+55-21-3534-3400",
+      contactType: "sales",
+      areaServed: "BR",
+      availableLanguage: "Portuguese",
+      email: "comercial_rj@multiteiner.com.br",
+    },
+    {
+      "@type": "ContactPoint",
+      telephone: "+55-21-3534-3434",
+      contactType: "customer support",
+      areaServed: "BR",
+      availableLanguage: "Portuguese",
+    },
+  ],
 };
 
 export const websiteSchema = {

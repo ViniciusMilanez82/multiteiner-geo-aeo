@@ -64,18 +64,12 @@ export default function Footer() {
           {/* Brand column */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-2.5 mb-5">
-              <div
-                className="flex items-center justify-center w-9 h-9 rounded-sm font-extrabold text-base"
-                style={{ background: "#F2C200", color: "#1B3A6B", fontFamily: "'Barlow Condensed', sans-serif" }}
-              >
-                MT
-              </div>
-              <span
-                className="font-extrabold text-base tracking-widest text-white"
-                style={{ fontFamily: "'Barlow Condensed', sans-serif" }}
-              >
-                MULTITEINER
-              </span>
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_8b88d7e1.png"
+                alt="Multiteiner"
+                className="h-10 w-auto"
+                style={{ filter: "brightness(0) invert(1)" }}
+              />
             </div>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.62)" }}>
               Somos a <strong style={{ color: "#F2C200" }}>maior empresa brasileira</strong> em transformação de contêineres e módulos habitacionais, com mais de 30 anos de experiência. Atendemos construção civil, eventos, operações industriais e logística.
@@ -83,17 +77,25 @@ export default function Footer() {
 
             {/* Contact */}
             <div className="space-y-2.5 mb-6">
-              <a href="tel:+551100000000" className="flex items-center gap-2.5 text-sm transition-opacity hover:opacity-80" style={{ color: "rgba(255,255,255,0.75)" }}>
+              <a href="tel:+552135343400" className="flex items-center gap-2.5 text-sm transition-opacity hover:opacity-80" style={{ color: "rgba(255,255,255,0.75)" }}>
                 <Phone className="w-4 h-4 shrink-0" style={{ color: "#F2C200" }} />
-                <span itemProp="telephone">(11) 0000-0000</span>
+                <span itemProp="telephone">(21) 3534-3400 / 3534-3434</span>
               </a>
-              <a href="mailto:contato@multiteiner.com.br" className="flex items-center gap-2.5 text-sm transition-opacity hover:opacity-80" style={{ color: "rgba(255,255,255,0.75)" }}>
+              <a href="mailto:comercial_rj@multiteiner.com.br" className="flex items-center gap-2.5 text-sm transition-opacity hover:opacity-80" style={{ color: "rgba(255,255,255,0.75)" }}>
                 <Mail className="w-4 h-4 shrink-0" style={{ color: "#F2C200" }} />
-                <span itemProp="email">contato@multiteiner.com.br</span>
+                <span itemProp="email">comercial_rj@multiteiner.com.br</span>
               </a>
               <div className="flex items-start gap-2.5 text-sm" style={{ color: "rgba(255,255,255,0.75)" }}>
                 <MapPin className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#F2C200" }} />
-                <span itemProp="address">São Paulo, SP — Brasil</span>
+                <span itemProp="address">Av. OL 1-B, Quadra C, Lote 10 — Duque de Caxias, RJ</span>
+              </div>
+              <div className="flex items-start gap-2.5 text-sm" style={{ color: "rgba(255,255,255,0.75)" }}>
+                <MapPin className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#F2C200" }} />
+                <span>Estrada Ferreira Guedes, nº 1134 — Itapecerica da Serra, SP</span>
+              </div>
+              <div className="flex items-start gap-2.5 text-sm" style={{ color: "rgba(255,255,255,0.75)" }}>
+                <MapPin className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#F2C200" }} />
+                <span>Av. Mem de Sá, nº 809 — Macaé, RJ</span>
               </div>
             </div>
 

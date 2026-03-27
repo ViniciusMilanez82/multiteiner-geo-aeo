@@ -64,3 +64,16 @@
 - [x] Zero erros TypeScript
 - [x] Zero erros de servidor
 - [x] Checkpoint final
+
+## Fase 7: Dados Reais da Multiteiner
+- [ ] Extrair telefone, e-mail, endereço e CNPJ reais do site
+- [ ] Extrair textos institucionais reais (sobre, missão, história)
+- [ ] Fazer download e upload do logo oficial para CDN
+- [ ] Fazer download e upload de fotos reais dos produtos/obras para CDN
+- [ ] Atualizar Footer com dados de contato reais
+- [ ] Atualizar SEOHead com dados reais (schema Organization)
+- [ ] Atualizar Home com fotos reais no hero e seções
+- [ ] Atualizar Sobre com textos e timeline reais
+- [ ] Atualizar Produtos com fotos reais de cada produto
+- [ ] Atualizar Segmentos com fotos reais de cada segmento
+- [ ] Checkpoint com dados reais

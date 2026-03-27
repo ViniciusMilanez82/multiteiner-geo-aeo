@@ -66,20 +66,12 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2.5 shrink-0" aria-label="Multiteiner — Página inicial">
-            <div
-              className="flex items-center justify-center w-9 h-9 rounded-sm font-extrabold text-base"
-              style={{ background: "#F2C200", color: "#1B3A6B", fontFamily: "'Barlow Condensed', sans-serif" }}
-            >
-              MT
-            </div>
-            <div className="flex flex-col leading-none">
-              <span className="font-extrabold text-base tracking-tight" style={{ color: logoColor, fontFamily: "'Barlow Condensed', sans-serif", letterSpacing: "0.04em" }}>
-                MULTITEINER
-              </span>
-              <span className="text-[9px] font-medium tracking-widest uppercase" style={{ color: scrolled ? "#64748B" : "rgba(255,255,255,0.7)" }}>
-                Transformação de Contêineres
-              </span>
-            </div>
+            <img
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_8b88d7e1.png"
+              alt="Multiteiner — Comércio e Locação de Contêineres"
+              className="h-10 w-auto"
+              style={{ filter: scrolled ? "none" : "brightness(0) invert(1)" }}
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -135,12 +127,12 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+551100000000"
+              href="tel:+552135343400"
               className="flex items-center gap-1.5 text-sm font-medium transition-opacity hover:opacity-80"
               style={{ color: scrolled ? "#1B3A6B" : "#F2C200" }}
             >
               <Phone className="w-4 h-4" />
-              <span>(11) 0000-0000</span>
+              <span>(21) 3534-3400</span>
             </a>
             <Link
               href="/orcamento"
