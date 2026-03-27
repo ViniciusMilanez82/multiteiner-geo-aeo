@@ -1,0 +1,180 @@
+CREATE TABLE `ai_referrals` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`session_id` varchar(100),
+	`referrer` text,
+	`referrer_type` enum('chatgpt','perplexity','gemini','copilot','claude','bard','bing_ai','other_ai','organic','direct') NOT NULL DEFAULT 'direct',
+	`landing_page` text,
+	`user_agent` text,
+	`query` text,
+	`country` varchar(10),
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	CONSTRAINT `ai_referrals_id` PRIMARY KEY(`id`)
+);
+--> statement-breakpoint
+CREATE TABLE `blog_posts` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`slug` varchar(200) NOT NULL,
+	`title` varchar(200) NOT NULL,
+	`headline` text NOT NULL,
+	`primary_answer` text NOT NULL,
+	`content` text NOT NULL,
+	`excerpt` text NOT NULL,
+	`category` varchar(100) NOT NULL,
+	`tags` json NOT NULL,
+	`author` varchar(100) DEFAULT 'Multiteiner',
+	`citable_passages` json NOT NULL,
+	`snippet_candidates` json,
+	`related_products` json,
+	`related_segments` json,
+	`meta_title` varchar(70),
+	`meta_description` varchar(160),
+	`published_at` timestamp,
+	`published` boolean NOT NULL DEFAULT false,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `blog_posts_id` PRIMARY KEY(`id`),
+	CONSTRAINT `blog_posts_slug_unique` UNIQUE(`slug`)
+);
+--> statement-breakpoint
+CREATE TABLE `comparisons` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`slug` varchar(120) NOT NULL,
+	`title` varchar(200) NOT NULL,
+	`option_a` varchar(100) NOT NULL,
+	`option_b` varchar(100) NOT NULL,
+	`primary_answer` text NOT NULL,
+	`summary` text NOT NULL,
+	`criteria` json NOT NULL,
+	`when_choose_a` text NOT NULL,
+	`when_choose_b` text NOT NULL,
+	`verdict` text NOT NULL,
+	`citable_passages` json NOT NULL,
+	`faq_items` json NOT NULL,
+	`meta_title` varchar(70),
+	`meta_description` varchar(160),
+	`published` boolean NOT NULL DEFAULT true,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `comparisons_id` PRIMARY KEY(`id`),
+	CONSTRAINT `comparisons_slug_unique` UNIQUE(`slug`)
+);
+--> statement-breakpoint
+CREATE TABLE `faq_items` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`category` varchar(100) NOT NULL,
+	`question` text NOT NULL,
+	`answer` text NOT NULL,
+	`answer_short` varchar(300),
+	`related_product` varchar(120),
+	`related_segment` varchar(120),
+	`intent` enum('definicional','comparativo','operacional','preco','prazo') NOT NULL,
+	`sort_order` int DEFAULT 0,
+	`published` boolean NOT NULL DEFAULT true,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	CONSTRAINT `faq_items_id` PRIMARY KEY(`id`)
+);
+--> statement-breakpoint
+CREATE TABLE `leads` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`name` varchar(200) NOT NULL,
+	`email` varchar(320) NOT NULL,
+	`phone` varchar(30),
+	`company` varchar(200),
+	`segment` varchar(120),
+	`product` varchar(120),
+	`message` text,
+	`type` enum('orcamento','contato','newsletter') NOT NULL DEFAULT 'contato',
+	`source` varchar(200),
+	`utm_source` varchar(100),
+	`utm_medium` varchar(100),
+	`utm_campaign` varchar(100),
+	`referrer` text,
+	`status` enum('novo','em_contato','convertido','descartado') NOT NULL DEFAULT 'novo',
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `leads_id` PRIMARY KEY(`id`)
+);
+--> statement-breakpoint
+CREATE TABLE `products` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`slug` varchar(120) NOT NULL,
+	`name` varchar(200) NOT NULL,
+	`category` enum('container','modulo','offshore','frigorifico') NOT NULL,
+	`headline` text NOT NULL,
+	`primary_answer` text NOT NULL,
+	`description` text NOT NULL,
+	`applications` json NOT NULL,
+	`specifications` json NOT NULL,
+	`when_to_use` text NOT NULL,
+	`when_not_to_use` text NOT NULL,
+	`differentials` json NOT NULL,
+	`citable_passages` json NOT NULL,
+	`schema_json` json,
+	`meta_title` varchar(70),
+	`meta_description` varchar(160),
+	`published` boolean NOT NULL DEFAULT true,
+	`sort_order` int DEFAULT 0,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `products_id` PRIMARY KEY(`id`),
+	CONSTRAINT `products_slug_unique` UNIQUE(`slug`)
+);
+--> statement-breakpoint
+CREATE TABLE `projects` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`slug` varchar(200) NOT NULL,
+	`title` varchar(200) NOT NULL,
+	`client` varchar(200),
+	`segment` varchar(120),
+	`product` varchar(120),
+	`description` text NOT NULL,
+	`challenge` text,
+	`solution` text,
+	`result` text,
+	`image_url` text,
+	`featured` boolean NOT NULL DEFAULT false,
+	`published` boolean NOT NULL DEFAULT true,
+	`sort_order` int DEFAULT 0,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	CONSTRAINT `projects_id` PRIMARY KEY(`id`),
+	CONSTRAINT `projects_slug_unique` UNIQUE(`slug`)
+);
+--> statement-breakpoint
+CREATE TABLE `segments` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`slug` varchar(120) NOT NULL,
+	`name` varchar(200) NOT NULL,
+	`icon` varchar(64),
+	`headline` text NOT NULL,
+	`primary_answer` text NOT NULL,
+	`problem` text NOT NULL,
+	`solution` text NOT NULL,
+	`use_cases` json NOT NULL,
+	`benefits` json NOT NULL,
+	`related_products` json NOT NULL,
+	`citable_passages` json NOT NULL,
+	`faq_items` json NOT NULL,
+	`meta_title` varchar(70),
+	`meta_description` varchar(160),
+	`published` boolean NOT NULL DEFAULT true,
+	`sort_order` int DEFAULT 0,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,
+	CONSTRAINT `segments_id` PRIMARY KEY(`id`),
+	CONSTRAINT `segments_slug_unique` UNIQUE(`slug`)
+);
+--> statement-breakpoint
+CREATE TABLE `testimonials` (
+	`id` int AUTO_INCREMENT NOT NULL,
+	`author` varchar(200) NOT NULL,
+	`role` varchar(200),
+	`company` varchar(200),
+	`content` text NOT NULL,
+	`segment` varchar(120),
+	`product` varchar(120),
+	`featured` boolean NOT NULL DEFAULT false,
+	`sort_order` int DEFAULT 0,
+	`published` boolean NOT NULL DEFAULT true,
+	`createdAt` timestamp NOT NULL DEFAULT (now()),
+	CONSTRAINT `testimonials_id` PRIMARY KEY(`id`)
+);

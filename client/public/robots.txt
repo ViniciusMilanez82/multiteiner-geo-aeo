@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.multiteiner.com.br/sitemap.xml
+
+# Bloquear rotas administrativas
+Disallow: /api/
+Disallow: /404
+
+# Permitir rastreamento de conteúdo GEO/AEO
+Allow: /produtos/
+Allow: /segmentos/
+Allow: /comparativos
+Allow: /faq
+Allow: /blog/
+Allow: /sobre
