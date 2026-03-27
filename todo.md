@@ -77,3 +77,10 @@
 - [ ] Atualizar Produtos com fotos reais de cada produto
 - [ ] Atualizar Segmentos com fotos reais de cada segmento
 - [ ] Checkpoint com dados reais
+
+## Fase 8: WhatsApp Flutuante
+
+- [x] Componente WhatsAppButton flutuante com número real
+- [x] Integrado no layout global (App.tsx — visível em todas as páginas)
+- [x] Mensagem pré-preenchida contextual para orçamento
+- [x] Schema.org ContactPoint atualizado com canal WhatsApp
