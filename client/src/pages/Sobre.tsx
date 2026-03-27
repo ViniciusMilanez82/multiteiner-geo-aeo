@@ -54,17 +54,17 @@ const VALUES = [
   {
     icon: <Target className="w-6 h-6" />,
     title: "Missão",
-    description: "Oferecer soluções modulares em contêineres e módulos habitacionais com qualidade, agilidade e segurança, atendendo às necessidades de cada cliente com excelência e compromisso.",
+    description: "Prestar serviços de acomodações temporárias com praticidade e eficiência, garantindo conforto e agilidade nas soluções de habitação, em harmonia com o meio ambiente, visando lucro e a valorização contínua dos empregados.",
   },
   {
     icon: <Eye className="w-6 h-6" />,
     title: "Visão",
-    description: "Ser a empresa de referência nacional em soluções modulares, reconhecida pela qualidade dos produtos, pela confiabilidade do serviço e pela capacidade de inovar em cada projeto.",
+    description: "Inovar sempre com soluções inteligentes para acomodações buscando ser e manter a marca referência no segmento, atuando em todo o Brasil e cujas ações envolvam respeito e conservação do meio ambiente.",
   },
   {
     icon: <Heart className="w-6 h-6" />,
     title: "Valores",
-    description: "Comprometimento com o cliente, qualidade sem concessões, transparência nas relações, respeito às pessoas e ao meio ambiente, e inovação contínua em processos e produtos.",
+    description: "Condutas alicerçadas em qualidade, segurança e excelência nos nossos produtos. Ética, seriedade e transparência em todos os aspectos da empresa. Inovação baseada em ciência. Criatividade para fazer o impossível.",
   },
   {
     icon: <Award className="w-6 h-6" />,

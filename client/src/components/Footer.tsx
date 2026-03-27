@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin, Youtube, Instagram, Linkedin, ArrowRight } from "lucide-react";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_multiteiner_5a2e6a04.png";
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_white_hd_987612b8.png";
 
 const PRODUCTS = [
   { label: "Contêineres", href: "/produtos/conteineres" },
@@ -97,7 +97,7 @@ export default function Footer() {
                 src={LOGO_URL}
                 alt="Multiteiner"
                 className="h-10 w-auto"
-                style={{ filter: "brightness(0) invert(1)" }}
+                /* logo branca HD — sem filtro necessário */
                 width={160}
                 height={40}
               />

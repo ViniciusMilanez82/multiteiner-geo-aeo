@@ -6,8 +6,8 @@ import {
   Box, Users, Shield, Thermometer
 } from "lucide-react";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_multiteiner_5a2e6a04.png";
-const LOGO_DARK_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_8b88d7e1.png";
+const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_white_hd_5c922366.png";
+const LOGO_DARK_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_dark_a9edd61b.png";
 
 const PRODUCTS = [
   { label: "Contêineres", href: "/produtos/conteineres", icon: Box, desc: "Escritórios, depósitos, lojas" },
@@ -71,7 +71,12 @@ export default function Navbar() {
               <Phone className="w-3 h-3" /> (21) 3534-3400
             </a>
             <span className="hidden sm:inline">|</span>
-            <a href="mailto:comercial@multiteiner.com.br" className="hidden sm:inline hover:text-[#F2C200] transition-colors">
+            <a href="https://wa.me/5521995568402" className="hidden sm:flex items-center gap-1 hover:text-[#F2C200] transition-colors" target="_blank" rel="noopener noreferrer">
+              <svg className="w-3 h-3" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.612.638l4.67-1.228A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.37 0-4.567-.82-6.3-2.188l-.44-.352-3.2.842.857-3.131-.386-.462A9.96 9.96 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+              (21) 99556-8402
+            </a>
+            <span className="hidden md:inline">|</span>
+            <a href="mailto:comercial@multiteiner.com.br" className="hidden md:inline hover:text-[#F2C200] transition-colors">
               comercial@multiteiner.com.br
             </a>
           </div>
@@ -82,10 +87,10 @@ export default function Navbar() {
           <Link href="/" className="flex-shrink-0" aria-label="Multiteiner — Página inicial">
             <img
               src={showSolid ? LOGO_DARK_URL : LOGO_URL}
-              alt="Multiteiner"
-              className="h-9 w-auto transition-all duration-300"
-              width={160}
-              height={36}
+              alt="Multiteiner — Comércio e Locação de Contêineres"
+              className="h-12 md:h-14 w-auto transition-all duration-300"
+              width={200}
+              height={56}
             />
           </Link>
 

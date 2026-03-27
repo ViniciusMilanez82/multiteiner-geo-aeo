@@ -92,7 +92,7 @@ export default function WhatsAppButton({ message = DEFAULT_MESSAGE }: WhatsAppBu
         itemType="https://schema.org/ContactPoint"
       >
         <meta itemProp="contactType" content="sales" />
-        <meta itemProp="telephone" content="+55-21-3534-3400" />
+        <meta itemProp="telephone" content="+55-21-99556-8402" />
         <WhatsAppIcon size={28} color="#fff" />
 
         {/* Pulse ring */}

@@ -7,82 +7,113 @@ import { SectionHeader, AnswerBlock, SpecTable, CTASection, FAQBlock } from "@/c
 
 const PRODUCTS: Record<string, {
   title: string; subtitle: string; desc: string; answer: string;
+  vantagens: string[];
+  aplicacoes: string[];
   specs: { label: string; value: string; highlight?: boolean }[];
   faq: { question: string; answer: string }[];
 }> = {
   conteineres: {
-    title: "Contêineres Transformados",
-    subtitle: "Escritórios, depósitos, lojas e muito mais",
-    desc: "Contêineres ISO 20 e 40 pés transformados para uso comercial e industrial.",
-    answer: "Os contêineres Multiteiner são unidades ISO (20 ou 40 pés) transformadas com acabamento interno completo, instalações elétricas e hidráulicas, climatização e esquadrias. Disponíveis para locação ou venda, com entrega e montagem em todo o Brasil. Certificados conforme normas ABNT.",
+    title: "Contêineres",
+    subtitle: "Escritórios, vestiários, almoxarifados, dormitórios e mais",
+    desc: "Contêineres transformados para uso comercial e industrial com mais de 30 anos de experiência.",
+    answer: "Temos a solução perfeita para atender a sua necessidade. São mais de 30 anos de experiência no segmento de locação e venda de contêineres. Nosso portfólio contém modelos diversificados: escritórios, vestiários, almoxarifados, dormitórios, entre outros.",
+    vantagens: ["Praticidade", "Melhor custo/benefício", "Redução de resíduos após a obra"],
+    aplicacoes: ["Obras", "Eventos", "Construções", "Feiras", "Estruturas comerciais"],
     specs: [
-      { label: "Comprimento (20 pés)", value: "6,06 m", highlight: true },
-      { label: "Comprimento (40 pés)", value: "12,19 m", highlight: true },
-      { label: "Largura", value: "2,44 m" },
-      { label: "Altura interna", value: "2,39 m" },
-      { label: "Capacidade de carga", value: "até 28.000 kg" },
-      { label: "Material", value: "Aço Corten" },
-      { label: "Certificação", value: "ABNT NBR" },
-      { label: "Disponibilidade", value: "Pronta-entrega" },
+      { label: "Medidas 20 pés", value: "6,058m × 2,44m × 2,59m (CxLxA)", highlight: true },
+      { label: "Área útil 20 pés", value: "14,78 m²", highlight: true },
+      { label: "Medidas 10 pés", value: "3,00m × 2,44m × 2,59m (CxLxA)" },
+      { label: "Área útil 10 pés", value: "7,32 m²" },
+      { label: "Piso", value: "Antiderrapante, compensado naval pintado" },
+      { label: "Teto", value: "Isolamento térmico" },
+      { label: "Ar-condicionado", value: "Entrada com suporte e tomada" },
+      { label: "Esquadrias (20 pés)", value: "1 porta de acesso / 2 janelas" },
+      { label: "Esquadrias (10 pés)", value: "1 porta de acesso / 1 janela" },
+      { label: "Instalações elétricas", value: "Até a saída do contêiner" },
+      { label: "Hidráulica", value: "Canos PVC aparentes, seção dimensionada ao uso" },
+      { label: "Empilhamento máximo", value: "9 pavimentos", highlight: true },
+      { label: "Carga admissível do piso", value: "1.800 kg/m² uniformemente distribuídos" },
     ],
     faq: [
-      { question: "Qual o prazo de entrega de um contêiner?", answer: "Para unidades em estoque, o prazo de entrega é de 3 a 7 dias úteis após confirmação do pedido, dependendo da localização. Projetos personalizados têm prazo variável conforme complexidade." },
-      { question: "É possível personalizar o contêiner?", answer: "Sim. A Multiteiner oferece personalização completa: layout interno, revestimentos, esquadrias, instalações especiais, pintura e branding. Nossa equipe de engenheiros e arquitetos desenvolve o projeto conforme sua necessidade." },
-      { question: "O contêiner precisa de fundação?", answer: "Sim, mas de forma simplificada. Geralmente são utilizados blocos de concreto ou sapatas pontuais. Nossa equipe orienta sobre o tipo de fundação adequado para cada projeto." },
+      { question: "Quais os tamanhos de contêiner disponíveis na Multiteiner?", answer: "A Multiteiner oferece contêineres de 10 pés (3,00m × 2,44m × 2,59m — área de 7,32 m²) e 20 pés (6,058m × 2,44m × 2,59m — área de 14,78 m²). Ambos podem ser configurados como escritórios, vestiários, almoxarifados ou dormitórios." },
+      { question: "Quantos contêineres podem ser empilhados?", answer: "Os contêineres Multiteiner suportam empilhamento de até 9 pavimentos, com carga admissível do piso de 1.800 kg/m² uniformemente distribuídos." },
+      { question: "O contêiner vem com ar-condicionado?", answer: "O contêiner vem preparado com entrada para ar-condicionado, incluindo suporte e tomada. A instalação do aparelho pode ser feita conforme a necessidade do cliente." },
     ],
   },
   modulos: {
     title: "Módulos Habitacionais",
-    subtitle: "Acomodações completas e modulares",
-    desc: "Soluções completas de acomodação compostas por múltiplos contêineres integrados.",
-    answer: "Os módulos habitacionais Multiteiner são soluções completas de acomodação, formadas pela integração de múltiplos contêineres. Incluem dormitórios, banheiros, refeitórios, áreas de lazer e toda a infraestrutura necessária. Ideais para obras de longa duração, operações remotas e grandes eventos.",
+    subtitle: "Soluções modulares para diversas aplicações",
+    desc: "Módulos habitacionais adaptáveis com praticidade no transporte e montagem.",
+    answer: "Os módulos habitacionais podem ser adaptados para diversas aplicações, com praticidade no transporte e montagem. A instalação dos módulos pode ser temporária ou permanente, e eles podem ser empilhados em até três pavimentos.",
+    vantagens: ["Baixo custo", "Flexibilidade construtiva", "Rapidez na execução do projeto", "Obras com menor acúmulo de entulhos", "Obra mais limpa e sustentável"],
+    aplicacoes: ["Eventos", "Postos de saúde", "Escolas", "Refeitórios", "Escritórios", "Auditórios", "Stand de vendas", "Sanitários", "Dormitórios"],
     specs: [
-      { label: "Capacidade por módulo", value: "8 a 200+ pessoas", highlight: true },
-      { label: "Configurações", value: "Dormitório, refeitório, banheiro, lazer" },
-      { label: "Instalações", value: "Elétrica, hidráulica, HVAC" },
-      { label: "Prazo de montagem", value: "3 a 15 dias" },
-      { label: "Norma", value: "ABNT NBR 15575" },
-      { label: "Modalidade", value: "Locação ou venda" },
+      { label: "Medidas 20 pés", value: "6,00m × 2,44m × 2,98m (CxLxA)", highlight: true },
+      { label: "Área útil 20 pés", value: "14,64 m²", highlight: true },
+      { label: "Medidas 10 pés", value: "3,00m × 2,44m × 2,98m (CxLxA)" },
+      { label: "Área útil 10 pés", value: "7,32 m²" },
+      { label: "Piso", value: "Antiderrapante, compensado naval, revestido com manta vinílica" },
+      { label: "Teto", value: "Forração termoacústica" },
+      { label: "Paredes", value: "Poliuretano (PU) injetável entre chapas laminadas de aço" },
+      { label: "Esquadrias", value: "1 porta de acesso / 2 janelas" },
+      { label: "Instalações elétricas", value: "Até a saída do contêiner" },
+      { label: "Hidráulica", value: "Canos PVC aparentes, seção dimensionada ao uso" },
+      { label: "Empilhamento máximo", value: "3 pavimentos", highlight: true },
+      { label: "Carga admissível do piso", value: "140 kg/m² uniformemente distribuídos" },
     ],
     faq: [
-      { question: "Qual a capacidade máxima de um módulo habitacional?", answer: "Não há limite fixo — os módulos são escaláveis. A Multiteiner já entregou complexos para mais de 500 pessoas, com dormitórios, refeitórios, banheiros e áreas de lazer integrados." },
-      { question: "Módulos habitacionais são adequados para regiões remotas?", answer: "Sim. Os módulos Multiteiner são projetados para operações em áreas remotas, com infraestrutura autossuficiente (energia, água, esgoto) e resistência a condições climáticas adversas." },
+      { question: "Qual a diferença entre contêiner e módulo habitacional?", answer: "O módulo habitacional possui paredes em poliuretano (PU) injetável entre chapas laminadas de aço, forração termoacústica no teto e piso revestido com manta vinílica — oferecendo maior conforto térmico e acústico. O contêiner tem estrutura mais robusta com empilhamento de até 9 pavimentos, enquanto o módulo suporta até 3." },
+      { question: "Os módulos podem ser usados de forma permanente?", answer: "Sim. A instalação dos módulos habitacionais pode ser temporária ou permanente, adaptando-se a diversas necessidades como postos de saúde, escolas, escritórios e dormitórios." },
+      { question: "Quais aplicações são possíveis com módulos habitacionais?", answer: "Os módulos Multiteiner podem ser configurados para eventos, postos de saúde, escolas, refeitórios, escritórios, auditórios, stands de vendas, sanitários e dormitórios." },
     ],
   },
   offshore: {
-    title: "Contêineres Offshore",
-    subtitle: "Certificados para operações marítimas",
-    desc: "Contêineres e módulos certificados DNV para uso em plataformas marítimas e ambientes extremos.",
-    answer: "Os contêineres offshore Multiteiner são certificados DNV (Det Norske Veritas) para uso em plataformas marítimas, embarcações e terminais portuários. Possuem estrutura reforçada, acabamentos resistentes à corrosão marinha e atendem todas as normas internacionais de segurança para operações offshore.",
+    title: "Offshore",
+    subtitle: "Contêineres certificados para operações marítimas",
+    desc: "Contêineres e módulos certificados para uso em plataformas e embarcações no setor petrolífero.",
+    answer: "No setor petrolífero, a Multiteiner se destaca por ser uma empresa que, além dos produtos para carga, consegue adaptar e transformar contêineres em diversas vivências nas plataformas, tais como alojamentos, lavanderias e sanitários. Todos os equipamentos são produzidos de acordo com os mais altos padrões de qualidade e seguem todas as normas internacionais (IMO).",
+    vantagens: ["Transporte seguro de cargas", "Conforto e segurança aos seus usuários"],
+    aplicacoes: ["Transporte de cargas", "Alojamentos", "Cozinhas", "Lavanderias", "Sanitários"],
     specs: [
-      { label: "Certificação", value: "DNV 2.7-1 / EN 12079", highlight: true },
-      { label: "Material", value: "Aço de alta resistência" },
-      { label: "Tratamento", value: "Anticorrosivo marinho" },
-      { label: "Capacidade de içamento", value: "Certificada por cálculo" },
-      { label: "Inspeção", value: "Periódica obrigatória" },
-      { label: "Aplicação", value: "Plataformas, navios, portos" },
+      { label: "Resistência", value: "Alta resistência estrutural", highlight: true },
+      { label: "Operação em mar aberto", value: "Carregamento/descarregamento com ondas de até 6 metros" },
+      { label: "Resistência a impacto", value: "Suporta impacto com outros contêineres no convés" },
+      { label: "Normas", value: "DNV 2.7-1 e 2.7-3 / EN 12079-1 ou 12079-3", highlight: true },
+      { label: "Material", value: "Aço carbono tipo CORTEN (ASTM A 572 Gr 50)" },
+      { label: "Içamento", value: "Olhais dimensionados para capacidades de uso com eslingas certificadas" },
+      { label: "Manutenção", value: "Profissionais qualificados conforme norma AWS D1.1" },
     ],
     faq: [
-      { question: "O que é a certificação DNV para contêineres offshore?", answer: "A certificação DNV (Det Norske Veritas) é o padrão internacional de segurança para equipamentos utilizados em operações marítimas. Garante que o contêiner foi projetado, fabricado e testado para suportar as condições de içamento e uso em plataformas e embarcações." },
-      { question: "Com que frequência os contêineres offshore precisam ser inspecionados?", answer: "A norma DNV 2.7-1 exige inspeção periódica a cada 2 anos, ou antes, caso o equipamento tenha sofrido danos ou impactos. A Multiteiner oferece serviço de inspeção e recertificação." },
+      { question: "Quais normas os contêineres offshore da Multiteiner seguem?", answer: "Os contêineres offshore são fabricados conforme regras DNV 2.7-1 e 2.7-3 ou EN 12079-1 e 12079-3, além de seguirem todas as normas internacionais IMO. São construídos em aço carbono tipo CORTEN (ASTM A 572 Gr 50)." },
+      { question: "Os contêineres offshore podem ser usados em mar aberto?", answer: "Sim. Os contêineres permitem carregamento e descarregamento em mar aberto a partir do convés de embarcações com ondas de até 6 metros de altura, e suportam impacto com outros contêineres ou partes rígidas da estrutura." },
+      { question: "Que tipo de manutenção é necessária para contêineres offshore?", answer: "A manutenção é realizada por profissionais capacitados e qualificados conforme norma AWS D1.1. Inspeções periódicas são obrigatórias conforme as normas DNV." },
     ],
   },
   frigorificos: {
-    title: "Contêineres Frigoríficos",
-    subtitle: "Controle de temperatura -20°C a +20°C",
-    desc: "Contêineres frigoríficos para armazenamento e transporte de produtos que requerem controle de temperatura.",
-    answer: "Os contêineres frigoríficos Multiteiner oferecem controle preciso de temperatura de -20°C a +20°C, com capacidade para alimentos, medicamentos, insumos industriais e qualquer produto que exija refrigeração. Disponíveis para locação em eventos, indústria alimentícia, farmacêutica e logística.",
+    title: "Frigoríficos",
+    subtitle: "Câmaras frigoríficas móveis de -20°C a +20°C",
+    desc: "Contêineres frigoríficos para conservação de produtos em baixas temperaturas.",
+    answer: "Os contêineres ou câmaras frigoríficas são soluções inteligentes, móveis, práticas e econômicas para conservar os seus produtos em baixas temperaturas. São fáceis de operar e capazes de conservar climatizados, por longo período, quaisquer produtos como, por exemplo, os perecíveis, que necessitam de cuidados especiais, mantendo suas características e qualidades inalteradas.",
+    vantagens: ["Durabilidade", "Praticidade e mobilidade (comparado com câmaras frigoríficas tradicionais)", "Eficiência", "Versatilidade — temperatura ajustável para resfriamento, climatização e congelamento"],
+    aplicacoes: ["Açougues", "Supermercados", "Sorveterias", "Fábricas de gelo", "Fabricantes de polpa de fruta", "Peixarias"],
     specs: [
+      { label: "Capacidade 10 pés", value: "3.048×2.438×2.595mm — 15.000 kg (14 m³)" },
+      { label: "Capacidade 20 pés", value: "6.058×2.438×2.595mm — 30.000 kg (28 m³)", highlight: true },
+      { label: "Capacidade 40 pés", value: "12.192×2.438×2.595mm — 30.000 kg (55 m³)", highlight: true },
+      { label: "Piso", value: "Alumínio tipo estrado em trilho" },
+      { label: "Consumo de energia", value: "Aprox. 8,0 kW/hora" },
+      { label: "Refrigeração 10/20 pés", value: "MICROLINK III" },
+      { label: "Refrigeração 40 pés", value: "CARRIER" },
       { label: "Faixa de temperatura", value: "-20°C a +20°C", highlight: true },
-      { label: "Comprimento", value: "20 ou 40 pés" },
-      { label: "Capacidade volumétrica", value: "28 m³ (20 pés)" },
-      { label: "Sistema de refrigeração", value: "Thermo King / Carrier" },
-      { label: "Alimentação elétrica", value: "380V trifásico" },
-      { label: "Monitoramento", value: "Temperatura em tempo real" },
+      { label: "Voltagem", value: "220V / 380V ou 440V trifásico" },
+      { label: "Limite máximo voltagem", value: "220V=190V; 380V=369V; 440V" },
+      { label: "Rede elétrica", value: "Disjuntor 50A — 220V: 4 fios 10mm; 380V: 4 fios 6mm; 440V: 4 fios 6mm" },
+      { label: "Certificação", value: "Projeto certificado BV — Normas NR-18, ANVISA" },
     ],
     faq: [
-      { question: "Qual a faixa de temperatura dos frigoríficos Multiteiner?", answer: "Os contêineres frigoríficos Multiteiner operam de -20°C a +20°C, cobrindo desde congelados profundos até resfriados. A temperatura é controlada com precisão de ±1°C e pode ser monitorada remotamente." },
-      { question: "Os frigoríficos são adequados para eventos?", answer: "Sim. Os frigoríficos Multiteiner são amplamente utilizados em grandes eventos como Rock in Rio e Tomorrowland para armazenamento de alimentos e bebidas. Entrega e retirada com logística própria." },
+      { question: "Qual a faixa de temperatura dos frigoríficos Multiteiner?", answer: "Os contêineres frigoríficos operam de -20°C a +20°C, cobrindo desde congelamento até climatização. A temperatura é ajustável, podendo se adequar à demanda de cada produto." },
+      { question: "Quais tamanhos de frigoríficos estão disponíveis?", answer: "A Multiteiner oferece frigoríficos de 10 pés (14 m³, 15.000 kg), 20 pés (28 m³, 30.000 kg) e 40 pés (55 m³, 30.000 kg). Cada tamanho utiliza sistema de refrigeração adequado à sua capacidade." },
+      { question: "Qual a voltagem necessária para operar um frigorífico?", answer: "Os frigoríficos operam em 220V, 380V ou 440V trifásico. A rede elétrica requer disjuntor de 50A, com fiação de 10mm (220V) ou 6mm (380V/440V)." },
     ],
   },
 };
@@ -131,7 +162,7 @@ export default function ProdutoDetalhe() {
           <Link href="/produtos" className="inline-flex items-center gap-1.5 text-sm mb-6 transition-opacity hover:opacity-80" style={{ color: "rgba(255,255,255,0.62)" }}>
             <ArrowLeft className="w-4 h-4" /> Todos os produtos
           </Link>
-          <span className="entity-badge mb-4 inline-block">Produto</span>
+          <span className="entity-badge mb-4 inline-block">Produto Multiteiner</span>
           <h1 className="text-4xl lg:text-5xl font-extrabold text-white mb-3 leading-tight">
             {product.title}
           </h1>
@@ -143,19 +174,49 @@ export default function ProdutoDetalhe() {
       <section className="py-12 section-light">
         <div className="container max-w-3xl">
           <AnswerBlock
-            question={`O que é ${product.title}?`}
+            question={`O que são os ${product.title} da Multiteiner?`}
             answer={product.answer}
           />
         </div>
       </section>
 
-      {/* Specs + Content */}
-      <section className="py-20">
+      {/* Vantagens e Aplicações */}
+      <section className="py-16">
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+            <div>
+              <SectionHeader badge="Vantagens" title="Por que escolher" />
+              <ul className="space-y-3 mt-6">
+                {product.vantagens.map((v, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: "#F2C200" }} />
+                    <span className="text-base" style={{ color: "#2D2D3A" }}>{v}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <SectionHeader badge="Aplicações" title="Onde utilizar" />
+              <ul className="space-y-3 mt-6">
+                {product.aplicacoes.map((a, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="w-2 h-2 rounded-full mt-2 flex-shrink-0" style={{ background: "#1B3A6B" }} />
+                    <span className="text-base" style={{ color: "#2D2D3A" }}>{a}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Specs + FAQ */}
+      <section className="py-20 section-light">
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
             <div>
               <SectionHeader badge="Especificações" title="Dados técnicos" />
-              <SpecTable title="Especificações Técnicas" rows={product.specs} />
+              <SpecTable title="Características Técnicas" rows={product.specs} />
             </div>
             <div>
               <SectionHeader badge="FAQ" title="Perguntas frequentes" />

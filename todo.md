@@ -137,3 +137,40 @@
 - [x] Cards com hover elevado e transição suave
 - [ ] Página 404 amigável com sugestões
 - [x] Meta tags Open Graph completas para compartilhamento social
+
+## Fase 12: Pente Fino — Revisão Total de Dados
+
+- [ ] Navegar por TODAS as páginas do site oficial e registrar dados exatos
+- [ ] Ler TODOS os arquivos do novo site e comparar com dados reais
+- [ ] Corrigir cada dado incorreto encontrado
+- [ ] Validar visualmente e salvar checkpoint
+
+## Fase 12b: Correção da Logo
+
+- [x] Aumentar tamanho da logo na Navbar
+- [x] Garantir que a logo fique nítida e visível (não clara/desbotada)
+
+## Fase 12c: Correções Logo + Telefones
+
+- [x] Baixar logo versão escura (azul) do site oficial para fundo claro
+- [x] Aumentar tamanho da logo na Navbar
+- [x] Adicionar celular comercial (21) 99556-8402 na Navbar
+- [x] Corrigir número do WhatsApp flutuante para (21) 99556-8402
+
+## Fase 13: Guia Definitivo — Referência Nacional
+
+- [x] Pesquisar dados técnicos reais e normas vigentes sobre contêineres
+- [x] Pesquisar mercado de construção modular no Brasil (dados reais)
+- [x] Reescrever Guia.tsx como referência definitiva (10+ seções)
+- [x] Seção 1: O que é um contêiner (definição técnica ISO)
+- [x] Seção 2: História do contêiner (McLean, padronização, evolução)
+- [x] Seção 3: Tipos de contêineres (com specs exatas ISO)
+- [x] Seção 4: O que é um módulo habitacional (definição, diferença de contêiner)
+- [x] Seção 5: Aplicações por segmento (construção, eventos, indústria, logística)
+- [x] Seção 6: Normas e regulamentações (ISO, ABNT, NR-18, DNV, ANVISA)
+- [x] Seção 7: Vantagens da construção modular vs convencional
+- [x] Seção 8: Como escolher (locação vs compra, tamanho, tipo)
+- [x] Seção 9: Mercado no Brasil (dados reais, tendências)
+- [x] Seção 10: FAQ técnica expandida (20+ perguntas)
+- [ ] Corrigir clientes inventados no SegmentoDetalhe.tsx
+- [ ] Remover dados numéricos não verificáveis (5.000+ projetos, 500+ clientes)
