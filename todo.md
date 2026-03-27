@@ -174,3 +174,25 @@
 - [x] Seção 10: FAQ técnica expandida (20+ perguntas)
 - [ ] Corrigir clientes inventados no SegmentoDetalhe.tsx
 - [ ] Remover dados numéricos não verificáveis (5.000+ projetos, 500+ clientes)
+
+## Fase 14: Ilustrações Técnicas na Página Guia
+
+- [ ] Gerar diagrama de corte transversal de contêiner 20 pés (vista lateral com dimensões)
+- [ ] Gerar diagrama de corte transversal de contêiner 40 pés HC (vista lateral com dimensões)
+- [ ] Gerar planta baixa de módulo escritório (20 pés)
+- [ ] Gerar planta baixa de módulo alojamento (40 pés HC)
+- [ ] Gerar planta baixa de módulo refeitório (40 pés HC)
+- [ ] Gerar diagrama de empilhamento/combinação de módulos
+- [ ] Upload de todas as imagens para CDN
+- [ ] Integrar ilustrações na página Guia.tsx com legendas técnicas
+- [x] Validar renderização visual no browser
+
+## Fase 15: Corrigir Ilustrações de Módulos Habitacionais
+
+- [x] Gerar planta baixa de módulo habitacional escritório (painéis sanduíche, paredes lisas, sem corrugado)
+- [x] Gerar planta baixa de módulo habitacional alojamento (painéis sanduíche, paredes lisas)
+- [x] Gerar planta baixa de módulo habitacional refeitório (painéis sanduíche, paredes lisas)
+- [x] Gerar diagrama de combinações de módulos habitacionais (não contêineres)
+- [x] Substituir imagens antigas na Guia.tsx pelas novas
+- [x] Validar renderização visual no browser
+- [x] Corrigir planta escritório: duas janelas centralizadas na parede lateral (não uma no canto)

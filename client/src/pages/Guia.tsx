@@ -22,6 +22,7 @@ const INDICE = [
   { label: "História do contêiner", href: "#historia", icon: History },
   { label: "Tipos de contêineres", href: "#tipos", icon: Layers },
   { label: "Dimensões ISO 668", href: "#dimensoes", icon: Ruler },
+  { label: "Ilustrações técnicas", href: "#ilustracoes", icon: Ruler },
   { label: "Módulos habitacionais", href: "#modulos", icon: HomeIcon },
   { label: "Aplicações por segmento", href: "#aplicacoes", icon: Building2 },
   { label: "Normas e regulamentações", href: "#normas", icon: Shield },
@@ -554,6 +555,36 @@ export default function Guia() {
             </div>
           </div>
 
+          {/* Diagramas de Corte Transversal */}
+          <div className="mt-10 mb-10">
+            <h3 className="font-bold text-xl mb-2" style={{ color: "#1A1A2E" }}>Diagramas de Corte Transversal</h3>
+            <p className="text-sm mb-6" style={{ color: "#64748B" }}>Ilustrações técnicas com vistas lateral e frontal, dimensões ISO e escala humana para referência.</p>
+            <div className="space-y-8">
+              <figure className="rounded-xl overflow-hidden border" style={{ borderColor: "#E2E8F0" }}>
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/corte-container-20pes-2rza9tDFMm3pLjGWrEPZiM.webp"
+                  alt="Diagrama de corte transversal de contêiner de 20 pés (ISO 1CC) — vista lateral e frontal com dimensões externas (6,058m x 2,438m x 2,591m) e internas (5,867m x 2,330m x 2,350m), escala humana 1,75m"
+                  className="w-full"
+                  loading="lazy"
+                />
+                <figcaption className="px-5 py-3 text-xs" style={{ background: "#F8FAFC", color: "#64748B" }}>
+                  <strong style={{ color: "#1B3A6B" }}>Fig. 1</strong> — Corte transversal do contêiner de 20 pés (ISO 1CC). Dimensões externas: 6,058 m x 2,438 m x 2,591 m. Internas mínimas: 5,867 m x 2,330 m x 2,350 m. Silhueta humana (1,75 m) para escala.
+                </figcaption>
+              </figure>
+              <figure className="rounded-xl overflow-hidden border" style={{ borderColor: "#E2E8F0" }}>
+                <img
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/corte-container-40hc-8m7Sj6sxpvwWjikuN5eqSF.webp"
+                  alt="Diagrama de corte transversal de contêiner de 40 pés High Cube (ISO 1AAA) — vista lateral e frontal com dimensões externas (12,192m x 2,438m x 2,896m) e internas (11,998m x 2,330m x 2,655m), destaque para altura adicional de 305mm"
+                  className="w-full"
+                  loading="lazy"
+                />
+                <figcaption className="px-5 py-3 text-xs" style={{ background: "#F8FAFC", color: "#64748B" }}>
+                  <strong style={{ color: "#1B3A6B" }}>Fig. 2</strong> — Corte transversal do contêiner de 40 pés High Cube (ISO 1AAA). Dimensões externas: 12,192 m x 2,438 m x 2,896 m. Destaque para os 305 mm adicionais de altura em relação ao standard.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+
           {/* Nota sobre HC */}
           <div className="p-5 rounded-xl" style={{ background: "#EEF2FF", border: "1px solid #C7D2FE" }}>
             <div className="flex items-start gap-3">
@@ -575,6 +606,101 @@ export default function Guia() {
                 <p className="text-sm font-bold mb-1" style={{ color: "#92400E" }}>Sobre o peso bruto máximo (MGM)</p>
                 <p className="text-sm leading-relaxed" style={{ color: "#78350F" }}>
                   A Emenda 2 de 2016 à ISO 668 aumentou o peso bruto máximo de contêineres de todos os tamanhos (exceto 10 pés) para 36.000 kg (79.370 lb). Antes disso, o limite para contêineres de 20 e 30 pés era de 30.480 kg (67.200 lb), estabelecido pela Emenda 1 de 2005. O peso bruto máximo inclui a tara (peso do contêiner vazio) mais a carga.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ ILUSTRAÇÕES TÉCNICAS — PLANTAS BAIXAS ═══ */}
+      <section id="ilustracoes" className="py-20">
+        <div className="container">
+          <SectionHeader badge="Plantas Baixas" title="Ilustrações técnicas de módulos" subtitle="Plantas baixas de layouts reais de módulos habitacionais e de apoio, com mobiliário, dimensões e escala técnica." />
+
+          {/* Escritório — Módulo 20 pés */}
+          <div className="mb-10">
+            <h3 className="font-bold text-lg mb-4 flex items-center gap-2" style={{ color: "#1B3A6B" }}>
+              <Ruler className="w-5 h-5" />
+              Escritório — Módulo 20 pés
+            </h3>
+            <figure className="rounded-xl overflow-hidden border" style={{ borderColor: "#E2E8F0" }}>
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/modulo-escritorio-20pes-4aJM74TDmgfdFQq5jtUagS.webp"
+                alt="Planta baixa de módulo habitacional de 20 pés transformado em escritório — paredes lisas em painéis sanduíche, layout com mesa de trabalho, cadeiras, armário, ar-condicionado, porta e duas janelas centralizadas. Dimensões internas: 5,87m x 2,33m. Escala 1:50"
+                className="w-full"
+                loading="lazy"
+              />
+              <figcaption className="px-5 py-3 text-xs" style={{ background: "#F8FAFC", color: "#64748B" }}>
+                <strong style={{ color: "#1B3A6B" }}>Fig. 3</strong> — Planta baixa de escritório em módulo habitacional de 20 pés (~14 m²). Paredes lisas em painéis sanduíche. Layout inclui mesa de trabalho, área de reunião, armário, ar-condicionado e duas janelas centralizadas. Escala 1:50.
+              </figcaption>
+            </figure>
+          </div>
+
+          {/* Alojamento — Módulo 40 pés HC */}
+          <div className="mb-10">
+            <h3 className="font-bold text-lg mb-4 flex items-center gap-2" style={{ color: "#1B3A6B" }}>
+              <Ruler className="w-5 h-5" />
+              Alojamento — Módulo 40 pés HC
+            </h3>
+            <figure className="rounded-xl overflow-hidden border" style={{ borderColor: "#E2E8F0" }}>
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/modulo-alojamento-40hc-cYHrRYdZudDC6fsJayz8Ms.webp"
+                alt="Planta baixa de módulo habitacional de 40 pés High Cube para alojamento de 8 pessoas — paredes lisas em painéis sanduíche, layout com banheiro, chuveiro, 4 beliches, mesa, armários e ar-condicionado. Dimensões internas: 12,0m x 2,33m. Escala 1:75"
+                className="w-full"
+                loading="lazy"
+              />
+              <figcaption className="px-5 py-3 text-xs" style={{ background: "#F8FAFC", color: "#64748B" }}>
+                <strong style={{ color: "#1B3A6B" }}>Fig. 4</strong> — Planta baixa de alojamento em módulo habitacional de 40 pés HC (~28 m²) para 8 pessoas. Paredes lisas em painéis sanduíche. Inclui banheiro completo, 4 beliches, área comum, armários individuais e 2 splits. Escala 1:75.
+              </figcaption>
+            </figure>
+          </div>
+
+          {/* Refeitório — Módulo 40 pés HC */}
+          <div className="mb-10">
+            <h3 className="font-bold text-lg mb-4 flex items-center gap-2" style={{ color: "#1B3A6B" }}>
+              <Ruler className="w-5 h-5" />
+              Refeitório — Módulo 40 pés HC
+            </h3>
+            <figure className="rounded-xl overflow-hidden border" style={{ borderColor: "#E2E8F0" }}>
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/modulo-refeitorio-40hc-NwCgUpf6Dqamjte2rM5H5e.webp"
+                alt="Planta baixa de módulo habitacional de 40 pés High Cube para refeitório de 18 pessoas — paredes lisas em painéis sanduíche, layout com cozinha, balcão de servir, 3 mesas com bancos, ar-condicionado, saída de emergência e extintor. Dimensões internas: 12,0m x 2,33m. Escala 1:75"
+                className="w-full"
+                loading="lazy"
+              />
+              <figcaption className="px-5 py-3 text-xs" style={{ background: "#F8FAFC", color: "#64748B" }}>
+                <strong style={{ color: "#1B3A6B" }}>Fig. 5</strong> — Planta baixa de refeitório em módulo habitacional de 40 pés HC (~28 m²) para 18 lugares. Paredes lisas em painéis sanduíche. Cozinha com pia, geladeira e micro-ondas; área de refeição com 3 mesas; saída de emergência conforme NR-18. Escala 1:75.
+              </figcaption>
+            </figure>
+          </div>
+
+          {/* Combinações Modulares */}
+          <div>
+            <h3 className="font-bold text-lg mb-4 flex items-center gap-2" style={{ color: "#1B3A6B" }}>
+              <Layers className="w-5 h-5" />
+              Combinações modulares — Escalabilidade
+            </h3>
+            <figure className="rounded-xl overflow-hidden border" style={{ borderColor: "#E2E8F0" }}>
+              <img
+                src="https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/combinacao-modulos-v2-FsuKYfzJU7ArrAbUoGzjRq.webp"
+                alt="Diagrama isométrico mostrando 3 configurações de combinação de módulos habitacionais com paredes lisas em painéis sanduíche: módulo único (28 m²), módulos laterais (56 m²) e complexo de 2 andares (112 m²) com escada externa"
+                className="w-full"
+                loading="lazy"
+              />
+              <figcaption className="px-5 py-3 text-xs" style={{ background: "#F8FAFC", color: "#64748B" }}>
+                <strong style={{ color: "#1B3A6B" }}>Fig. 6</strong> — Combinações de módulos habitacionais: módulo único (28 m²), dois módulos laterais com parede compartilhada removida (56 m²) e complexo de 2 andares com 4 módulos e escada externa (112 m²). Paredes lisas em painéis sanduíche, estrutura em perfis metálicos.
+              </figcaption>
+            </figure>
+          </div>
+
+          <div className="mt-8 p-5 rounded-xl" style={{ background: "#EEF2FF", border: "1px solid #C7D2FE" }}>
+            <div className="flex items-start gap-3">
+              <AlertCircle className="w-5 h-5 mt-0.5 shrink-0" style={{ color: "#1B3A6B" }} />
+              <div>
+                <p className="text-sm font-bold mb-1" style={{ color: "#1B3A6B" }}>Sobre as ilustrações</p>
+                <p className="text-sm leading-relaxed" style={{ color: "#475569" }}>
+                  As plantas baixas acima são layouts de referência. Cada projeto da Multiteiner é personalizado conforme as necessidades do cliente, podendo variar em distribuição interna, acabamento e equipamentos. Solicite um orçamento para receber um projeto técnico específico para sua demanda.
                 </p>
               </div>
             </div>
