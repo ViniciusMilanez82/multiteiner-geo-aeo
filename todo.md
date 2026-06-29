@@ -272,3 +272,8 @@
 - [x] Navegação por teclado na SearchBar (↑↓ para navegar, Enter para selecionar, Esc para fechar)
 - [x] Claim "Mais de 5.000 projetos" corrigido para "Milhares de projetos entregues" (dado não verificável)
 - [x] FAQ da Home expandida para 12 perguntas (adicionadas: loja/comércio, normas técnicas, projetos sob medida)
+
+## Fase 23: Melhorias UX — FAQ e SearchBar
+- [x] Animação de transição suave ao expandir/recolher itens do FAQ na Home
+- [x] Botão "Limpar busca" com ícone X na SearchBar para apagar texto rapidamente
+- [x] Mensagem amigável de "Nenhum resultado encontrado" na SearchBar sugerindo contato com atendimento

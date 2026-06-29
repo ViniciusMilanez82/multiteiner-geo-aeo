@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { useState, useRef, useEffect } from "react";
 import { Link } from "wouter";
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -165,7 +166,7 @@ export function ComparisonTable({ optionA, optionB, rows, className = "" }: Comp
 }
 
 // ── FAQ Block ─────────────────────────────────────────────────────────────────
-// AEO: FAQ estruturada com schema.org nativo
+// AEO: FAQ estruturada com schema.org nativo + animação suave
 interface FAQItem {
   question: string;
   answer: string;
@@ -175,42 +176,76 @@ interface FAQBlockProps {
   className?: string;
 }
 export function FAQBlock({ items, className = "" }: FAQBlockProps) {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const toggle = (i: number) => {
+    setOpenIndex((prev) => (prev === i ? null : i));
+  };
+
   return (
     <div className={`space-y-3 ${className}`} itemScope itemType="https://schema.org/FAQPage">
       {items.map((item, i) => (
-        <details
+        <FAQAccordionItem
           key={i}
-          className="group border border-border rounded-lg overflow-hidden"
-          itemScope
-          itemProp="mainEntity"
-          itemType="https://schema.org/Question"
-        >
-          <summary
-            className="flex items-center justify-between px-5 py-4 font-semibold transition-colors list-none select-none"
-            style={{ color: "#1A1A2E" }}
-            itemProp="name"
-          >
-            <span>{item.question}</span>
-            <span
-              className="ml-3 shrink-0 text-lg transition-transform group-open:rotate-180"
-              style={{ color: "#1B3A6B" }}
-            >
-              ▾
-            </span>
-          </summary>
-          <div
-            className="px-5 py-4 border-t border-border"
-            style={{ background: "#F8FAFC" }}
-            itemScope
-            itemProp="acceptedAnswer"
-            itemType="https://schema.org/Answer"
-          >
-            <p className="text-sm leading-relaxed" style={{ color: "#475569" }} itemProp="text">
-              {item.answer}
-            </p>
-          </div>
-        </details>
+          item={item}
+          isOpen={openIndex === i}
+          onToggle={() => toggle(i)}
+        />
       ))}
+    </div>
+  );
+}
+
+function FAQAccordionItem({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; onToggle: () => void }) {
+  const contentRef = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    if (contentRef.current) {
+      setHeight(contentRef.current.scrollHeight);
+    }
+  }, [isOpen, item.answer]);
+
+  return (
+    <div
+      className="border border-border rounded-lg overflow-hidden"
+      itemScope
+      itemProp="mainEntity"
+      itemType="https://schema.org/Question"
+    >
+      <button
+        type="button"
+        onClick={onToggle}
+        className="w-full flex items-center justify-between px-5 py-4 font-semibold cursor-pointer transition-colors list-none select-none hover:bg-gray-50 bg-white text-left"
+        style={{ color: "#1A1A2E" }}
+        aria-expanded={isOpen}
+        itemProp="name"
+      >
+        <span>{item.question}</span>
+        <span
+          className={`ml-3 shrink-0 text-lg transition-transform duration-300 ease-in-out ${isOpen ? "rotate-180" : ""}`}
+          style={{ color: "#1B3A6B" }}
+        >
+          ▾
+        </span>
+      </button>
+      <div
+        className="transition-all duration-300 ease-in-out overflow-hidden"
+        style={{ maxHeight: isOpen ? `${height}px` : "0px", opacity: isOpen ? 1 : 0 }}
+      >
+        <div
+          ref={contentRef}
+          className="px-5 py-4 border-t border-border"
+          style={{ background: "#F8FAFC" }}
+          itemScope
+          itemProp="acceptedAnswer"
+          itemType="https://schema.org/Answer"
+        >
+          <p className="text-sm leading-relaxed" style={{ color: "#475569" }} itemProp="text">
+            {item.answer}
+          </p>
+        </div>
+      </div>
     </div>
   );
 }

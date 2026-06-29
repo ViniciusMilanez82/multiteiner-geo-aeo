@@ -423,3 +423,18 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+
+/* ── FAQ Smooth Expand/Collapse Animation ───────────────────────────────── */
+.faq-details .faq-answer-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+.faq-details[open] .faq-answer-wrapper {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+.faq-details .faq-answer-wrapper > div {
+  overflow: hidden;
+}
