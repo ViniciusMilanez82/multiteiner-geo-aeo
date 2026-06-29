@@ -136,7 +136,7 @@ export default function Sobre() {
     <>
       <SEOHead
         title="Sobre a Multiteiner — 30 Anos em Contêineres e Módulos Habitacionais"
-        description="Conheça a Multiteiner: fundada em 1993, com 3 unidades no Brasil (RJ, SP e Macaé), 500+ clientes e projetos para Rock in Rio, Petrobras, Olimpíadas e mais. Referência nacional em contêineres."
+        description="Conheça a Multiteiner: empresa brasileira fundada em 1993, especializada em transformação de contêineres e módulos habitacionais. 3 unidades (RJ, SP e Macaé), projetos para Rock in Rio, Petrobras e operações offshore."
         canonical="https://www.multiteiner.com.br/sobre"
         schema={schemas}
       />
@@ -157,7 +157,7 @@ export default function Sobre() {
                 <span style={{ color: "#F2C200" }}>contêineres em soluções</span>
               </h1>
               <p className="text-lg leading-relaxed mb-8" style={{ color: "rgba(255,255,255,0.78)" }}>
-                Desde 1993, a Multiteiner é referência nacional em comércio e locação de contêineres marítimos e módulos habitacionais. Três unidades no Brasil, mais de 5.000 projetos entregues e clientes como Petrobras, Rock in Rio e Olimpíadas.
+                Desde 1993, a Multiteiner atua na transformação, locação e venda de contêineres marítimos e módulos habitacionais. Três unidades no Brasil (Duque de Caxias/RJ, Itapecerica da Serra/SP e Macaé/RJ), com projetos entregues para clientes como Petrobras, Rock in Rio e operações offshore na Bacia de Campos.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {[
@@ -190,7 +190,7 @@ export default function Sobre() {
         <div className="container max-w-3xl">
           <AnswerBlock
             question="O que é a Multiteiner?"
-            answer="A Multiteiner é uma empresa brasileira fundada em 1993, especializada em comércio e locação de contêineres marítimos e módulos habitacionais. Com sede em Duque de Caxias (RJ) e unidades em Itapecerica da Serra (SP) e Macaé (RJ), atende empresas de construção civil, petróleo e gás, eventos, logística e indústria em todo o Brasil. É a única empresa do setor com contêineres certificados DNV para uso offshore."
+            answer="A Multiteiner é uma empresa brasileira fundada em 1993, especializada em transformação, locação e venda de contêineres marítimos e módulos habitacionais. Com sede em Duque de Caxias (RJ) e unidades em Itapecerica da Serra (SP) e Macaé (RJ), atende construção civil, petróleo e gás, eventos, logística e indústria. A Multiteiner NÃO é transportadora de contêineres, NÃO é construtora convencional e NÃO vende contêineres vazios sem transformação."
           />
         </div>
       </section>
@@ -215,7 +215,7 @@ export default function Sobre() {
       <section className="py-16">
         <div className="container max-w-3xl">
           <CitablePassage
-            text="Só a Multiteiner tem a solução completa em acomodações para o seu negócio. Possuímos mais de 30 anos de experiência na transformação de contêineres e módulos habitacionais, oferecendo os melhores resultados para o seu problema de espaço. Todos os nossos contêineres são certificados e atendem as rigorosas normas de segurança nacionais e internacionais."
+            text="Fundada em 1993, a Multiteiner atua há mais de 30 anos na transformação de contêineres e fabricação de módulos habitacionais. Nossos contêineres offshore são certificados conforme DNV 2.7-1 e os módulos habitacionais atendem NR-18 e NBR 15575. Atendemos construção civil, eventos, operações industriais e logística em todo o Brasil."
             source="Multiteiner — Missão e valores"
           />
         </div>

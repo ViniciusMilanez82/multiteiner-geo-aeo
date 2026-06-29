@@ -50,7 +50,7 @@ const UNITS = [
 
 const SOCIALS = [
   { Icon: Instagram, href: "https://instagram.com/multiteiner", label: "Instagram" },
-  { Icon: Linkedin, href: "https://linkedin.com/company/multiteiner", label: "LinkedIn" },
+  { Icon: Linkedin, href: "https://www.linkedin.com/company/multiteiner", label: "LinkedIn" },
   { Icon: Youtube, href: "https://youtube.com/@multiteiner", label: "YouTube" },
 ];
 
@@ -66,11 +66,11 @@ export default function Footer() {
       <meta itemProp="legalName" content="Multiteiner Comércio e Locação de Contêineres Ltda." />
       <meta itemProp="url" content="https://www.multiteiner.com.br" />
       <meta itemProp="logo" content={LOGO_URL} />
-      <meta itemProp="description" content="Maior empresa brasileira em transformação de contêineres e módulos habitacionais, com mais de 30 anos de experiência." />
+      <meta itemProp="description" content="Empresa brasileira fundada em 1993, especializada em transformação, locação e venda de contêineres e módulos habitacionais para construção civil, eventos, operações industriais e logística." />
       <meta itemProp="foundingDate" content="1993" />
       <meta itemProp="areaServed" content="Brasil" />
       <link itemProp="sameAs" href="https://instagram.com/multiteiner" />
-      <link itemProp="sameAs" href="https://linkedin.com/company/multiteiner" />
+      <link itemProp="sameAs" href="https://www.linkedin.com/company/multiteiner" />
       <link itemProp="sameAs" href="https://youtube.com/@multiteiner" />
 
       {/* CTA band */}
@@ -104,7 +104,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.62)" }}>
-              Somos a <strong style={{ color: "#F2C200" }}>maior empresa brasileira</strong> em transformação de contêineres e módulos habitacionais, com mais de 30 anos de experiência. Atendemos construção civil, eventos, operações industriais e logística em todo o Brasil.
+              A <strong style={{ color: "#F2C200" }}>Multiteiner</strong> é uma empresa brasileira fundada em 1993, especializada em transformação, locação e venda de contêineres e módulos habitacionais. Atendemos construção civil, eventos, operações industriais e logística em todo o Brasil.
             </p>
 
             {/* Units */}

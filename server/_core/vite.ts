@@ -5,6 +5,7 @@ import { nanoid } from "nanoid";
 import path from "path";
 import { createServer as createViteServer } from "vite";
 import viteConfig from "../../vite.config";
+import { prerenderHTML } from "../prerender";
 
 export async function setupVite(app: Express, server: Server) {
   const serverOptions = {
@@ -39,7 +40,10 @@ export async function setupVite(app: Express, server: Server) {
         `src="/src/main.tsx?v=${nanoid()}"`
       );
       const page = await vite.transformIndexHtml(url, template);
-      res.status(200).set({ "Content-Type": "text/html" }).end(page);
+
+      // Apply prerender: inject meta tags, schema JSON-LD and content into HTML
+      const { html, status } = prerenderHTML(url, page);
+      res.status(status).set({ "Content-Type": "text/html" }).end(html);
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
       next(e);
@@ -60,8 +64,11 @@ export function serveStatic(app: Express) {
 
   app.use(express.static(distPath));
 
-  // fall through to index.html if the file doesn't exist
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  // Apply prerender for all routes (with proper 404 status)
+  app.use("*", (req, res) => {
+    const indexPath = path.resolve(distPath, "index.html");
+    const template = fs.readFileSync(indexPath, "utf-8");
+    const { html, status } = prerenderHTML(req.originalUrl, template);
+    res.status(status).set({ "Content-Type": "text/html" }).end(html);
   });
 }

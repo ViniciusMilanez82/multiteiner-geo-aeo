@@ -86,7 +86,7 @@ export default function FAQ() {
             { name: "Início", url: "https://www.multiteiner.com.br" },
             { name: "FAQ", url: "https://www.multiteiner.com.br/faq" },
           ]),
-          makeFAQSchema(ALL_FAQ),
+          makeFAQSchema(currentItems),
         ]}
       />
       <Navbar />

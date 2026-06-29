@@ -89,7 +89,7 @@ export const organizationSchema = {
     height: 76,
   },
   description:
-    "Maior empresa brasileira em transformação de contêineres e módulos habitacionais, com mais de 30 anos de experiência em soluções para construção civil, eventos, operações industriais e logística.",
+    "Empresa brasileira fundada em 1993, especializada em transformação, locação e venda de contêineres e módulos habitacionais para construção civil, eventos, operações industriais e logística. Unidades em Duque de Caxias (RJ), Itapecerica da Serra (SP) e Macaé (RJ).",
   foundingDate: "1993",
   areaServed: { "@type": "Country", name: "Brasil" },
   knowsAbout: [
@@ -214,6 +214,8 @@ export function makeProductSchema(product: {
   description: string;
   image?: string;
   sku?: string;
+  priceLow?: string;
+  priceHigh?: string;
 }) {
   return {
     "@context": "https://schema.org",
@@ -225,13 +227,29 @@ export function makeProductSchema(product: {
     brand: { "@type": "Brand", name: "Multiteiner" },
     manufacturer: { "@id": "https://www.multiteiner.com.br/#organization" },
     offers: {
-      "@type": "Offer",
+      "@type": "AggregateOffer",
       priceCurrency: "BRL",
+      lowPrice: product.priceLow || "800",
+      highPrice: product.priceHigh || "8000",
+      offerCount: "4",
       availability: "https://schema.org/InStock",
       seller: { "@id": "https://www.multiteiner.com.br/#organization" },
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        priceType: "https://schema.org/LeaseOut",
+        unitText: "mês",
+      },
     },
   };
 }
+
+export const personAuthorSchema = {
+  "@type": "Person",
+  "@id": "https://www.multiteiner.com.br/#author-equipe",
+  name: "Equipe Técnica Multiteiner",
+  url: "https://www.multiteiner.com.br/sobre",
+  worksFor: { "@id": "https://www.multiteiner.com.br/#organization" },
+};
 
 export function makeBlogPostSchema(post: {
   title: string;
@@ -250,7 +268,7 @@ export function makeBlogPostSchema(post: {
     datePublished: post.datePublished,
     dateModified: post.dateModified ?? post.datePublished,
     image: post.image,
-    author: { "@id": "https://www.multiteiner.com.br/#organization" },
+    author: personAuthorSchema,
     publisher: { "@id": "https://www.multiteiner.com.br/#organization" },
     mainEntityOfPage: { "@type": "WebPage", "@id": post.url },
   };

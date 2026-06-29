@@ -1,17 +1,38 @@
+# Multiteiner — robots.txt otimizado para GEO/AEO
+# Permite crawlers de IA para citação e busca
+
 User-agent: *
 Allow: /
+Disallow: /api/
 
-# Sitemaps
-Sitemap: https://www.multiteiner.com.br/sitemap.xml
+# Bots de IA — Busca e Citação (PERMITIDOS)
+User-agent: GPTBot
+Allow: /
 
-# Bloquear rotas administrativas
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Bloquear rotas não-indexáveis
 Disallow: /api/
 Disallow: /404
 
-# Permitir rastreamento de conteúdo GEO/AEO
-Allow: /produtos/
-Allow: /segmentos/
-Allow: /comparativos
-Allow: /faq
-Allow: /blog/
-Allow: /sobre
+# Sitemaps
+Sitemap: https://www.multiteiner.com.br/sitemap.xml

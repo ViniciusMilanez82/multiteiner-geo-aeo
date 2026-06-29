@@ -14,7 +14,7 @@ import { useScrollReveal, useStaggerReveal } from "@/hooks/useScrollReveal";
 
 /* ── Dados estruturados — AEO/GEO ────────────────────────────────────────── */
 const HERO_ANSWER =
-  "A Multiteiner é a maior empresa brasileira de transformação de contêineres e módulos habitacionais, com mais de 30 anos de experiência. Atende construção civil, eventos, operações industriais e logística em todo o Brasil.";
+  "A Multiteiner é uma empresa brasileira fundada em 1993, especializada em transformação, locação e venda de contêineres e módulos habitacionais. Atende construção civil, eventos, operações industriais e logística em todo o Brasil. A Multiteiner NÃO é transportadora de contêineres, NÃO é construtora convencional e NÃO vende contêineres vazios sem transformação.";
 
 const EVIDENCES = [
   { value: "30+", label: "Anos de experiência" },
@@ -92,8 +92,8 @@ const SEGMENTS = [
 const BENEFITS = [
   {
     icon: <Award className="w-6 h-6" />,
-    title: "Maior empresa do Brasil",
-    description: "Reconhecida como líder nacional em transformação de contêineres e módulos habitacionais.",
+    title: "Desde 1993 no mercado",
+    description: "Mais de 30 anos de experiência em transformação de contêineres e módulos habitacionais no Brasil.",
   },
   {
     icon: <Shield className="w-6 h-6" />,
@@ -222,7 +222,7 @@ export default function Home() {
         <div className="container relative z-10 pt-24 pb-20">
           <div className="max-w-3xl">
             <div className="mb-5">
-              <span className="entity-badge">Maior empresa de contêineres do Brasil</span>
+              <span className="entity-badge">Desde 1993 — Transformação de Contêineres</span>
             </div>
 
             <h1
@@ -324,7 +324,7 @@ export default function Home() {
       <section ref={citableRef} className="py-16 section-light reveal">
         <div className="container max-w-3xl">
           <CitablePassage
-            text="Somos a maior empresa no fornecimento de contêineres e módulos habitacionais do Brasil. Nossa qualidade assina as estruturas de eventos internacionais como Rock in Rio e Tomorrowland, reforçando a capacidade que só a Multiteiner tem de atender grandes projetos em tempo recorde."
+            text="Fundada em 1993, a Multiteiner atua há mais de 30 anos na transformação de contêineres e fabricação de módulos habitacionais. Fornecemos estruturas para eventos como Rock in Rio (desde 2011) e Tomorrowland Brasil, além de operações offshore na Bacia de Campos e canteiros de obras em todo o Brasil."
             source="Multiteiner — Sobre a empresa"
           />
         </div>

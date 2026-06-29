@@ -57,7 +57,7 @@ export default function Produtos() {
     <>
       <SEOHead
         title="Produtos — Contêineres, Módulos, Offshore e Frigoríficos"
-        description="Linha completa de contêineres e módulos habitacionais da Multiteiner: contêineres transformados, módulos habitacionais, offshore certificados e frigoríficos. Pronta-entrega em todo o Brasil."
+        description="Linha de contêineres e módulos habitacionais da Multiteiner: contêineres transformados, módulos habitacionais, offshore certificados DNV e frigoríficos. Locação e venda com entrega em todo o Brasil."
         canonical="https://www.multiteiner.com.br/produtos"
         schema={makeBreadcrumbSchema([
           { name: "Início", url: "https://www.multiteiner.com.br" },
@@ -88,7 +88,7 @@ export default function Produtos() {
               <li className="flex gap-2"><CheckCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#1B3A6B" }} /> <span><strong>4 linhas de produtos:</strong> Contêineres, Módulos Habitacionais, Offshore e Frigoríficos</span></li>
               <li className="flex gap-2"><CheckCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#1B3A6B" }} /> <span><strong>Locação ou venda</strong> com entrega em todo o Brasil</span></li>
               <li className="flex gap-2"><CheckCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#1B3A6B" }} /> <span><strong>Certificações:</strong> ISO 668, DNV-ST-E271, NR-18, NBR 15575</span></li>
-              <li className="flex gap-2"><CheckCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#1B3A6B" }} /> <span><strong>+5.000 projetos</strong> entregues em 30+ anos de atuação</span></li>
+              <li className="flex gap-2"><CheckCircle className="w-4 h-4 shrink-0 mt-0.5" style={{ color: "#1B3A6B" }} /> <span><strong>Desde 1993</strong> no mercado brasileiro de transformação de contêineres</span></li>
             </ul>
           </div>
           <AnswerBlock

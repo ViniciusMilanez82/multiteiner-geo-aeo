@@ -8,17 +8,17 @@ const COMPARATIVOS = [
     id: "conteiner-vs-modulo",
     title: "Contêiner vs. Módulo Habitacional",
     question: "Qual a diferença entre contêiner e módulo habitacional?",
-    answer: "O contêiner é uma unidade individual transformada (20 ou 40 pés) para uso específico. O módulo habitacional é uma solução completa formada pela integração de múltiplos contêineres, com infraestrutura de dormitório, banheiro, refeitório e lazer. Módulos são ideais para obras longas e operações remotas; contêineres individuais para usos pontuais.",
+    answer: "O contêiner transformado parte de um contêiner marítimo ISO 668 existente (paredes corrugadas de aço corten). O módulo habitacional é fabricado do zero com perfis metálicos e painéis sanduíche (EPS ou PIR), oferecendo paredes lisas, melhor isolamento termoacuústico e empilhamento até 3 pavimentos. Ambos são transportáveis por caminhão e instaláveis em 1 dia.",
     optionA: "Contêiner",
     optionB: "Módulo Habitacional",
     rows: [
-      { criteria: "Unidade", optionA: "Individual (1 contêiner)", optionB: "Integrado (múltiplos)", winner: "tie" as const },
-      { criteria: "Ideal para", optionA: "Uso pontual e específico", optionB: "Acomodação completa", winner: "tie" as const },
-      { criteria: "Infraestrutura", optionA: "Básica (elétrica, hidráulica)", optionB: "Completa (dormitório, banheiro, refeitório)", winner: "B" as const },
-      { criteria: "Prazo de montagem", optionA: "1 a 3 dias", optionB: "3 a 15 dias", winner: "A" as const },
-      { criteria: "Custo", optionA: "Menor", optionB: "Maior (mais completo)", winner: "A" as const },
-      { criteria: "Capacidade", optionA: "1 uso por unidade", optionB: "8 a 200+ pessoas", winner: "B" as const },
-      { criteria: "Personalização", optionA: "Alta", optionB: "Muito alta", winner: "B" as const },
+      { criteria: "Origem da estrutura", optionA: "Contêiner marítimo ISO 668 reaproveitado", optionB: "Fabricado do zero com perfis metálicos", winner: "tie" as const },
+      { criteria: "Paredes", optionA: "Corrugadas (aço corten)", optionB: "Lisas (painéis sanduíche EPS/PIR)", winner: "B" as const },
+      { criteria: "Isolamento térmico", optionA: "Inferior (transmitância ≥ 2,5 W/m²K)", optionB: "Superior (transmitância ≤ 1,0 W/m²K)", winner: "B" as const },
+      { criteria: "Empilhamento", optionA: "Até 9 unidades (ISO)", optionB: "Até 3 pavimentos", winner: "tie" as const },
+      { criteria: "Montagem no local", optionA: "1 dia", optionB: "1 dia", winner: "tie" as const },
+      { criteria: "Locação (a partir de)", optionA: "R$ 800/mês (20 pés)", optionB: "R$ 1.200/mês (20 pés)", winner: "A" as const },
+      { criteria: "Vida útil", optionA: "25+ anos", optionB: "30+ anos", winner: "B" as const },
     ],
   },
   {
@@ -97,9 +97,9 @@ export default function Comparativos() {
           <div className="rounded-xl border-l-4 p-6" style={{ borderColor: "#F2C200", background: "rgba(242,194,0,0.06)" }}>
             <p className="text-xs font-bold uppercase tracking-widest mb-3" style={{ color: "#1B3A6B" }}>Resumo rápido — 3 comparativos</p>
             <ul className="space-y-1.5 text-sm" style={{ color: "#475569" }}>
-              <li><strong>Contêiner vs. Módulo:</strong> Contêiner = uso pontual e rápido. Módulo = acomodação completa para equipes.</li>
-              <li><strong>Alvenaria vs. Contêiner:</strong> Contêiner é até 30x mais rápido e 100% relocável.</li>
-              <li><strong>Locação vs. Compra:</strong> Locação até 18 meses; compra para uso permanente.</li>
+              <li><strong>Contêiner vs. Módulo:</strong> Contêiner = estrutura corrugada reaproveitada. Módulo = fabricado do zero com painéis sanduíche (melhor isolamento).</li>
+              <li><strong>Alvenaria vs. Contêiner:</strong> Contêiner: montagem em 1–3 dias vs. 30–90 dias da alvenaria. 100% relocável.</li>
+              <li><strong>Locação vs. Compra:</strong> Locação para projetos temporários; compra quando o uso justifica o investimento inicial.</li>
             </ul>
           </div>
         </div>

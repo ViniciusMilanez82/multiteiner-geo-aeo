@@ -180,7 +180,7 @@ export default function Cases() {
     <>
       <SEOHead
         title="Cases e Projetos — Multiteiner | Rock in Rio, Petrobras, Vale, Carnaval"
-        description="Conheça os projetos reais da Multiteiner: Rock in Rio (200+ contêineres), Petrobras offshore (DNV 2.7-1), MRV canteiros de obras, Carnaval do Rio e Vale mineração. Mais de 5.000 projetos entregues em 30 anos."
+        description="Projetos da Multiteiner: Rock in Rio (desde 2011), Petrobras offshore (DNV 2.7-1), canteiros de obras, Carnaval do Rio e operações de mineração. Empresa fundada em 1993 com atuação em todo o Brasil."
         canonical="https://www.multiteiner.com.br/cases"
         schema={schemas}
       />
@@ -204,7 +204,7 @@ export default function Cases() {
             <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6" style={{ color: "#FFFFFF", fontFamily: "'Barlow Condensed', sans-serif" }}>
               Projetos que <span style={{ color: "#F2C200" }}>transformam</span> o Brasil
             </h1>
-            <AnswerBlock answer="A Multiteiner já entregou mais de 5.000 projetos em 30 anos — de festivais como Rock in Rio e Carnaval a plataformas offshore da Petrobras e vilas de mineração da Vale. Conheça os cases que comprovam nossa experiência." />
+            <AnswerBlock answer="Desde 1993, a Multiteiner fornece contêineres transformados e módulos habitacionais para projetos de grande porte — de festivais como Rock in Rio e Carnaval a plataformas offshore da Petrobras e operações de mineração da Vale. Conheça os cases que ilustram nossa atuação." />
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8">
               {NUMBERS.map((n) => (
                 <div key={n.label} className="text-center p-4 rounded-xl" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)" }}>

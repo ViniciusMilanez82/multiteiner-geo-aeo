@@ -244,3 +244,23 @@
 - [x] Blog post: Mercado brasileiro de construção modular
 - [x] Blog post: Sustentabilidade e contêineres reciclados
 - [x] Blog post: Aluguel vs compra de contêineres — qual escolher?
+
+## Fase 21: Refatoração GEO/AEO baseada no Manual Mestre (P0-P2)
+- [x] P0: Implementar SSR/prerender para conteúdo + schema no HTML servido
+- [x] P1: Corrigir schema - LocalBusiness por unidade com geo/openingHours
+- [x] P1: Corrigir schema - BlogPosting.author = Person (não Organization)
+- [x] P1: Corrigir schema - Product.offers com preço/faixa
+- [x] P1: Corrigir schema - FAQ schema só do visível na página ativa
+- [x] P1: Corrigir schema - Service por segmento (offshore, eventos, construção, logística)
+- [x] P1: Sitemap automático com /guia, /cases, lastmod real
+- [x] P1: Corrigir soft 404 (rotas inválidas retornam 404 real)
+- [x] P2: robots.txt nomeando bots de IA explicitamente
+- [x] P2: Criar llms.txt enxuto
+- [ ] P2: Criar og-default.jpg (pendente - precisa de imagem real)
+- [x] P2: Autocontenção de entidade (repetir "Multiteiner" em vez de pronomes)
+- [x] P2: Desambiguação negativa (o que a Multiteiner NÃO é)
+- [x] P2: Links para fontes primárias (DNV, IMO, ABNT)
+- [x] P2: Padronizar "mais de 30 anos" em todo o site
+- [x] P2: Remover/suavizar superlativos não verificáveis
+- [ ] P2: Remover "Petrobras" como cliente nomeado (não confirmado) — mantido pois logo existe
+- [x] P2: Confirmar e padronizar URL LinkedIn
