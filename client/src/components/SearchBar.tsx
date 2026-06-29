@@ -239,17 +239,29 @@ function SearchModal({
           )}
 
           {query.trim() !== "" && results.length === 0 && (
-            <div className="px-5 py-8 text-center">
-              <div className="w-12 h-12 mx-auto mb-3 rounded-full flex items-center justify-center" style={{ background: "rgba(27,58,107,0.06)" }}>
-                <Search className="w-5 h-5" style={{ color: "#94A3B8" }} />
+            <div className="px-5 py-6 text-center">
+              {/* Ilustração empática — lupa triste */}
+              <div className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center" style={{ background: "rgba(27,58,107,0.05)" }}>
+                <svg className="w-8 h-8" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="22" cy="22" r="12" stroke="#94A3B8" strokeWidth="3" fill="none" />
+                  <line x1="31" y1="31" x2="40" y2="40" stroke="#94A3B8" strokeWidth="3" strokeLinecap="round" />
+                  {/* Olhos tristes */}
+                  <circle cx="18" cy="20" r="1.5" fill="#64748B" />
+                  <circle cx="26" cy="20" r="1.5" fill="#64748B" />
+                  {/* Boca triste */}
+                  <path d="M18 27 C20 25, 24 25, 26 27" stroke="#64748B" strokeWidth="1.5" strokeLinecap="round" fill="none" />
+                </svg>
               </div>
-              <p className="text-sm font-medium" style={{ color: "#475569" }}>
-                Nenhum resultado encontrado para “{query}”
+
+              <p className="text-sm font-semibold" style={{ color: "#334155" }}>
+                Nenhum resultado para "{query}"
               </p>
-              <p className="text-xs mt-2 mb-4" style={{ color: "#94A3B8" }}>
-                Tente termos como “contêiner”, “módulo”, “evento” ou “offshore”
+              <p className="text-xs mt-1.5 mb-4" style={{ color: "#94A3B8" }}>
+                Tente termos como "contêiner", "módulo", "evento" ou "offshore"
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
+
+              {/* Botões de ação */}
+              <div className="flex flex-wrap items-center justify-center gap-2 mb-5">
                 <a
                   href={`https://wa.me/5521995568402?text=${encodeURIComponent(`Olá, busquei por "${query}" no site e não encontrei o que procurava. Podem me ajudar?`)}`}
                   target="_blank"
@@ -261,12 +273,38 @@ function SearchModal({
                   Falar com atendimento
                 </a>
                 <button
-                  onClick={() => handleSelect("/contato")}
+                  onClick={() => { setQuery(""); inputRef.current?.focus(); }}
                   className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg text-xs font-semibold border transition-all hover:bg-gray-50"
                   style={{ borderColor: "#E2E8F0", color: "#1B3A6B" }}
                 >
-                  Ir para Contato
+                  <X className="w-3 h-3" />
+                  Limpar busca
                 </button>
+              </div>
+
+              {/* Seção: Produtos Recomendados */}
+              <div className="border-t border-gray-100 pt-4">
+                <p className="text-[10px] font-bold uppercase tracking-wider mb-3" style={{ color: "#94A3B8" }}>Mais populares</p>
+                <div className="flex flex-col gap-1">
+                  {SEARCH_INDEX.filter(i => i.category === "Produtos").slice(0, 4).map((item) => {
+                    const Icon = item.icon;
+                    return (
+                      <button
+                        key={item.href}
+                        onClick={() => handleSelect(item.href)}
+                        className="w-full flex items-center gap-3 px-3 py-2 rounded-lg text-left transition-colors hover:bg-gray-50 group"
+                      >
+                        <div className="w-7 h-7 rounded-md flex items-center justify-center flex-shrink-0" style={{ background: "rgba(27,58,107,0.06)" }}>
+                          <Icon className="w-3.5 h-3.5 group-hover:text-[#F2C200] transition-colors" style={{ color: "#1B3A6B" }} />
+                        </div>
+                        <div className="flex-1 min-w-0">
+                          <p className="text-xs font-semibold truncate" style={{ color: "#1A1A2E" }}>{item.title}</p>
+                          <p className="text-[10px] truncate" style={{ color: "#64748B" }}>{item.description}</p>
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           )}

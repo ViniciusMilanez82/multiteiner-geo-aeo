@@ -279,3 +279,6 @@
 - [x] Mensagem amigável de "Nenhum resultado encontrado" na SearchBar sugerindo contato com atendimento
 - [x] Botão WhatsApp em "Nenhum resultado" abre em nova aba com mensagem pré-preenchida incluindo o termo buscado
 - [x] Efeito de pulso/destaque visual no botão WhatsApp quando busca não retorna resultados
+- [x] Seção "Produtos Recomendados" ou "Mais Populares" abaixo da mensagem de "Nenhum resultado" na SearchBar
+- [x] Botão "Limpar Busca" ao lado do botão WhatsApp para o usuário voltar a ver todos os itens
+- [x] Ilustração empática (ícone de lupa triste) acima da mensagem de "Nenhum resultado"
