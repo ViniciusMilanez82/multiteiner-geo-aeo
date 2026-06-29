@@ -251,7 +251,7 @@ function SearchModal({
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
                 <a
-                  href="https://wa.me/5521995568402?text=Ol%C3%A1%2C%20n%C3%A3o%20encontrei%20o%20que%20procurava%20no%20site.%20Podem%20me%20ajudar%3F"
+                  href={`https://wa.me/5521995568402?text=${encodeURIComponent(`Olá, busquei por "${query}" no site e não encontrei o que procurava. Podem me ajudar?`)}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-semibold transition-all hover:scale-105"

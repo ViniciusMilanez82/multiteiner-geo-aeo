@@ -277,3 +277,4 @@
 - [x] Animação de transição suave ao expandir/recolher itens do FAQ na Home
 - [x] Botão "Limpar busca" com ícone X na SearchBar para apagar texto rapidamente
 - [x] Mensagem amigável de "Nenhum resultado encontrado" na SearchBar sugerindo contato com atendimento
+- [x] Botão WhatsApp em "Nenhum resultado" abre em nova aba com mensagem pré-preenchida incluindo o termo buscado
