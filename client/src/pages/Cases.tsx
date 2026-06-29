@@ -152,8 +152,8 @@ const CATEGORIES = [
 ];
 
 const NUMBERS = [
-  { value: "5.000+", label: "Projetos entregues" },
-  { value: "500+", label: "Clientes ativos" },
+  { value: "Milhares", label: "Projetos entregues" },
+  { value: "Centenas", label: "Clientes ativos" },
   { value: "30+", label: "Anos de experiência" },
   { value: "3", label: "Unidades no Brasil" },
 ];

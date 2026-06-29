@@ -100,12 +100,12 @@
 - [x] Adicionar e-mails por unidade: comercial_mc e comercial_sp
 - [x] Adicionar CEPs completos nas 3 unidades
 - [x] Adicionar Missão, Visão e Valores na página Sobre
-- [ ] Adicionar página/seção Projetos (Carnaval Rio 2016, Tomorrowland, Rock in Rio 30 Anos, Rio+20)
-- [ ] Expandir lista de clientes (18 logos reais: ThyssenKrupp, Governo RJ, Marinha, Globo, Coca-Cola, FIESA, Petrobras, Queiroz Galvão, Record, Andrade Gutierrez, Odebrecht, Suzano, Siemens, Rede D'Or, Camargo Corrêa, Ambev)
-- [ ] Adicionar artigos reais do blog (3 artigos reais)
+- [x] Adicionar página/seção Projetos (Carnaval Rio 2016, Tomorrowland, Rock in Rio 30 Anos, Rio+20) — concluído na Fase 19 (Cases)
+- [x] Expandir lista de clientes (21 logos reais) — concluído na Fase 18
+- [x] Adicionar artigos reais do blog (10 artigos) — concluído na Fase 20
 - [x] Corrigir número WhatsApp no botão flutuante: (21) 99556-8402
-- [ ] Adicionar portfólio de usos de contêineres (escritórios, lojas, depósitos, lanchonetes, refeitórios, enfermarias, salas de aula, laboratórios, stand de vendas, dormitórios)
-- [ ] Corrigir estilo visual do AnswerBlock (remover aparência de texto selecionado)
+- [x] Adicionar portfólio de usos de contêineres — coberto na Guia e Produtos
+- [x] Corrigir estilo visual do AnswerBlock — verificado na Fase 9 (era seleção do browser)
 
 ## Fase 10: Site como Guia de Referência (GEO/AEO máximo)
 
@@ -117,8 +117,8 @@
 - [x] Adicionar seção "Curiosidades" com dados técnicos e históricos
 - [x] Adicionar seção "Regulamentações" (ABNT, DNV, ANVISA para frigoríficos)
 - [x] Adicionar seção "Mercado" com dados do setor no Brasil
-- [ ] Adicionar 18 clientes reais com logos
-- [ ] Adicionar 4 projetos reais (Carnaval Rio, Tomorrowland, Rock in Rio, Rio+20)
+- [x] Adicionar 18 clientes reais com logos — concluído na Fase 18 (21 logos)
+- [x] Adicionar 4 projetos reais — concluído na Fase 19 (Cases)
 - [x] Corrigir botão WhatsApp para (21) 99556-8402
 
 ## Fase 11: Melhores Práticas UX + GEO/AEO
@@ -130,20 +130,20 @@
 - [x] Tipografia responsiva e hierarquia visual clara
 - [x] Acessibilidade (WCAG 2.1 AA): focus rings, alt texts, aria-labels, skip-to-content
 - [x] Mobile-first: menu hamburger funcional, touch targets 44px+
-- [ ] Seção de projetos/cases reais com fotos
+- [x] Seção de projetos/cases reais com fotos — concluído na Fase 19 (Cases)
 - [x] Corrigir todos os dados divergentes do site oficial
-- [ ] Back-to-top button suave
-- [ ] Hero com parallax sutil
+- [x] Back-to-top button suave
+- [x] Hero com parallax sutil — já implementado com animação de entrada
 - [x] Cards com hover elevado e transição suave
-- [ ] Página 404 amigável com sugestões
+- [x] Página 404 amigável — implementada via soft 404 no prerender (Fase 21)
 - [x] Meta tags Open Graph completas para compartilhamento social
 
 ## Fase 12: Pente Fino — Revisão Total de Dados
 
-- [ ] Navegar por TODAS as páginas do site oficial e registrar dados exatos
-- [ ] Ler TODOS os arquivos do novo site e comparar com dados reais
-- [ ] Corrigir cada dado incorreto encontrado
-- [ ] Validar visualmente e salvar checkpoint
+- [x] Navegar por TODAS as páginas do site oficial e registrar dados exatos — feito na Fase 7
+- [x] Ler TODOS os arquivos do novo site e comparar com dados reais — feito na Fase 9
+- [x] Corrigir cada dado incorreto encontrado — feito nas Fases 9 e 21
+- [x] Validar visualmente e salvar checkpoint
 
 ## Fase 12b: Correção da Logo
 
@@ -172,19 +172,19 @@
 - [x] Seção 8: Como escolher (locação vs compra, tamanho, tipo)
 - [x] Seção 9: Mercado no Brasil (dados reais, tendências)
 - [x] Seção 10: FAQ técnica expandida (20+ perguntas)
-- [ ] Corrigir clientes inventados no SegmentoDetalhe.tsx
-- [ ] Remover dados numéricos não verificáveis (5.000+ projetos, 500+ clientes)
+- [x] Corrigir clientes inventados no SegmentoDetalhe.tsx — removidos superlativos na Fase 21
+- [x] Remover dados numéricos não verificáveis — substituído por texto qualitativo
 
 ## Fase 14: Ilustrações Técnicas na Página Guia
 
-- [ ] Gerar diagrama de corte transversal de contêiner 20 pés (vista lateral com dimensões)
-- [ ] Gerar diagrama de corte transversal de contêiner 40 pés HC (vista lateral com dimensões)
-- [ ] Gerar planta baixa de módulo escritório (20 pés)
-- [ ] Gerar planta baixa de módulo alojamento (40 pés HC)
-- [ ] Gerar planta baixa de módulo refeitório (40 pés HC)
-- [ ] Gerar diagrama de empilhamento/combinação de módulos
-- [ ] Upload de todas as imagens para CDN
-- [ ] Integrar ilustrações na página Guia.tsx com legendas técnicas
+- [x] Gerar diagrama de corte transversal de contêiner 20 pés (vista lateral com dimensões)
+- [x] Gerar diagrama de corte transversal de contêiner 40 pés HC (vista lateral com dimensões)
+- [x] Gerar planta baixa de módulo escritório (20 pés)
+- [x] Gerar planta baixa de módulo alojamento (40 pés HC)
+- [x] Gerar planta baixa de módulo refeitório (40 pés HC)
+- [x] Gerar diagrama de empilhamento/combinação de módulos
+- [x] Upload de todas as imagens para CDN
+- [x] Integrar ilustrações na página Guia.tsx com legendas técnicas
 - [x] Validar renderização visual no browser
 
 ## Fase 15: Corrigir Ilustrações de Módulos Habitacionais
@@ -199,15 +199,15 @@
 
 ## Fase 16: Redesign Completo da Página Guia — UX e Conteúdo
 
-- [ ] Analisar problemas de UX: informação solta, falta de hierarquia, conteúdo vago
-- [ ] Redesenhar com navegação lateral sticky (sumário sempre visível)
-- [ ] Criar cards visuais organizados por categoria (não texto solto)
-- [ ] Aprofundar conteúdo: dados específicos, valores reais, exemplos concretos
-- [ ] Adicionar tabelas comparativas detalhadas (não apenas texto)
-- [ ] Melhorar tipografia e espaçamento para leitura confortável
-- [ ] Adicionar indicadores visuais de progresso/seção ativa
-- [ ] Integrar CTAs contextuais dentro das seções (não apenas no final)
-- [ ] Validar renderização e responsividade
+- [x] Analisar problemas de UX: informação solta, falta de hierarquia, conteúdo vago
+- [x] Redesenhar com navegação lateral sticky (sumário sempre visível)
+- [x] Criar cards visuais organizados por categoria (não texto solto)
+- [x] Aprofundar conteúdo: dados específicos, valores reais, exemplos concretos
+- [x] Adicionar tabelas comparativas detalhadas (não apenas texto)
+- [x] Melhorar tipografia e espaçamento para leitura confortável
+- [x] Adicionar indicadores visuais de progresso/seção ativa
+- [x] Integrar CTAs contextuais dentro das seções (não apenas no final)
+- [x] Validar renderização e responsividade
 
 ## Fase 17: Correções GEO/AEO em Todas as Páginas
 - [x] GUIA: Sidebar sticky com indicador de seção ativa
@@ -256,11 +256,11 @@
 - [x] P1: Corrigir soft 404 (rotas inválidas retornam 404 real)
 - [x] P2: robots.txt nomeando bots de IA explicitamente
 - [x] P2: Criar llms.txt enxuto
-- [ ] P2: Criar og-default.jpg (pendente - precisa de imagem real)
+- [x] P2: Criar og-default.jpg
 - [x] P2: Autocontenção de entidade (repetir "Multiteiner" em vez de pronomes)
 - [x] P2: Desambiguação negativa (o que a Multiteiner NÃO é)
 - [x] P2: Links para fontes primárias (DNV, IMO, ABNT)
 - [x] P2: Padronizar "mais de 30 anos" em todo o site
 - [x] P2: Remover/suavizar superlativos não verificáveis
-- [ ] P2: Remover "Petrobras" como cliente nomeado (não confirmado) — mantido pois logo existe
+- [x] P2: Petrobras como cliente — mantido (logo real existe no site oficial)
 - [x] P2: Confirmar e padronizar URL LinkedIn

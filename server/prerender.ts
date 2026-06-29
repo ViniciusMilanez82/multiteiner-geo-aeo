@@ -13,7 +13,7 @@ const ORG_FULL = "Multiteiner Transformação de Contêineres";
 const ORG_DESC = "Empresa brasileira especializada em transformação, locação e venda de contêineres e módulos habitacionais para construção civil, eventos, operações industriais, logística e operações offshore. Fundada em 1993, com mais de 30 anos de experiência e unidades em Duque de Caxias (RJ), Itapecerica da Serra (SP) e Macaé (RJ).";
 const SITE_URL = "https://www.multiteiner.com.br";
 const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_8b88d7e1.png";
-const OG_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/og-default.jpg";
+const OG_IMAGE = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/og-default-BHDMmi4LciYWfb6K85Mckg.png";
 
 // ─── Schema Base (Organization + 3 LocalBusiness + WebSite) ──────────────────
 

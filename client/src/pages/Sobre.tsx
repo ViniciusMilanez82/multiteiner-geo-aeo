@@ -88,7 +88,7 @@ const DIFERENCIAIS = [
   { icon: <MapPin className="w-6 h-6" />, title: "3 unidades estratégicas", description: "Duque de Caxias (RJ), Itapecerica da Serra (SP) e Macaé (RJ). Cobertura nacional com logística otimizada." },
   { icon: <Anchor className="w-6 h-6" />, title: "Certificação DNV offshore", description: "Contêineres certificados DNV 2.7-1 para uso em plataformas offshore. Atendemos Petrobras e operadoras do setor." },
   { icon: <Building2 className="w-6 h-6" />, title: "Portfólio completo", description: "Dry, high cube, frigoríficos, offshore e módulos habitacionais. Venda, locação e manutenção em um único fornecedor." },
-  { icon: <Users className="w-6 h-6" />, title: "500+ clientes ativos", description: "Petrobras, Rock in Rio, Coca-Cola, Globo, ThyssenKrupp, Bob's, Tomorrowland. Clientes que confiam e voltam." },
+  { icon: <Users className="w-6 h-6" />, title: "Centenas de clientes ativos", description: "Petrobras, Rock in Rio, Coca-Cola, Globo, ThyssenKrupp, Bob's, Tomorrowland. Clientes que confiam e voltam." },
   { icon: <Shield className="w-6 h-6" />, title: "Resposta em 24 horas", description: "Orçamento respondido em até 24 horas úteis. Entrega ágil com frota própria e equipe técnica especializada." },
 ];
 
@@ -163,8 +163,8 @@ export default function Sobre() {
                 {[
                   { value: "30+", label: "Anos de experiência" },
                   { value: "3", label: "Unidades no Brasil" },
-                  { value: "5.000+", label: "Projetos entregues" },
-                  { value: "500+", label: "Clientes ativos" },
+                  { value: "Milhares", label: "Projetos entregues" },
+                  { value: "Centenas", label: "Clientes ativos" },
                 ].map((n) => (
                   <div key={n.label} className="text-center p-4 rounded-xl" style={{ background: "rgba(255,255,255,0.08)", border: "1px solid rgba(255,255,255,0.12)" }}>
                     <div className="text-2xl font-extrabold mb-1" style={{ color: "#F2C200", fontFamily: "'Barlow Condensed', sans-serif" }}>{n.value}</div>
@@ -201,8 +201,8 @@ export default function Sobre() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-0 rounded-xl overflow-hidden border border-white/10">
             {[
               { value: "30+", label: "Anos de experiência" },
-              { value: "5.000+", label: "Projetos entregues" },
-              { value: "500+", label: "Clientes ativos" },
+              { value: "Milhares", label: "Projetos entregues" },
+              { value: "Centenas", label: "Clientes ativos" },
               { value: "100%", label: "Certificados ABNT/DNV" },
             ].map((e) => (
               <EvidenceBadge key={e.label} value={e.value} label={e.label} />

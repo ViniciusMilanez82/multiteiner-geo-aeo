@@ -15,7 +15,7 @@ const SEGMENTS: Record<string, {
     desc: "Soluções completas para canteiros de obras de qualquer porte — do escritório ao alojamento.",
     answer: "Para construção civil, a Multiteiner fornece escritórios de obra, alojamentos para trabalhadores, refeitórios, depósitos de materiais, enfermarias e salas de reunião. Soluções disponíveis para locação ou venda, com montagem rápida e atendimento em todo o Brasil. Parceira das maiores construtoras do país.",
     solutions: ["Escritório de obra", "Alojamento de trabalhadores", "Refeitório", "Depósito de materiais", "Enfermaria", "Sala de reunião", "Vestiário", "Guarita"],
-    clients: ["Odebrecht", "Camargo Corrêa", "MRV", "Cyrela", "Tenda"],
+    clients: ["MRV", "Queiroz Galvão", "Andrade Gutierrez", "Camargo Corrêa"],
     faq: [
       { question: "Qual o prazo de montagem de um escritório de obra?", answer: "Um escritório de obra padrão pode ser montado em 1 a 3 dias úteis após a entrega. Projetos maiores, com múltiplos módulos, levam de 5 a 15 dias dependendo da complexidade." },
       { question: "É possível alugar contêineres por curto prazo para obras?", answer: "Sim. A Multiteiner oferece locação com prazo mínimo de 30 dias, ideal para obras de curta duração. Para obras longas, a compra pode ser mais vantajosa — nossos consultores orientam sobre a melhor opção." },
@@ -26,7 +26,7 @@ const SEGMENTS: Record<string, {
     desc: "Estruturas para os maiores festivais do Brasil — Rock in Rio, Tomorrowland e muito mais.",
     answer: "Para eventos, a Multiteiner fornece camarotes VIP, bares, bilheterias, backstage, frigoríficos e estruturas sanitárias. Com experiência em Rock in Rio desde 2011 e Tomorrowland Brasil, é a parceira de confiança para eventos de grande porte. Montagem e desmontagem ágeis, com logística própria.",
     solutions: ["Camarotes VIP", "Bares e food trucks", "Bilheterias", "Backstage e produção", "Frigoríficos", "Sanitários", "Vestiários", "Posto médico"],
-    clients: ["Rock in Rio", "Tomorrowland", "Bob's", "Heineken", "Ambev"],
+    clients: ["Rock in Rio", "Bob's", "Coca-Cola", "Heineken"],
     faq: [
       { question: "A Multiteiner atende eventos de qualquer porte?", answer: "Sim. Atendemos desde pequenos eventos corporativos até os maiores festivais do Brasil. Nossa capacidade logística permite entregar e montar estruturas em qualquer localidade do país." },
       { question: "Como funciona a locação de frigoríficos para eventos?", answer: "Os frigoríficos são entregues no local do evento, conectados à rede elétrica e prontos para uso. Oferecemos monitoramento de temperatura e suporte técnico durante todo o evento." },
@@ -37,7 +37,7 @@ const SEGMENTS: Record<string, {
     desc: "Módulos para mineração, petróleo, gás e operações em áreas remotas.",
     answer: "Para operações industriais, a Multiteiner fornece bases de operações, alojamentos remotos, laboratórios de campo, salas de controle e equipamentos offshore certificados DNV. Experiência em mineração, petróleo, gás e operações em áreas remotas de difícil acesso. Soluções robustas para ambientes extremos.",
     solutions: ["Base de operações", "Alojamento remoto", "Laboratório de campo", "Sala de controle", "Equipamentos offshore", "Depósito de insumos", "Módulo administrativo", "Enfermaria"],
-    clients: ["Petrobras", "Vale", "ThyssenKrupp", "Anglo American", "Samarco"],
+    clients: ["Petrobras", "Vale", "ThyssenKrupp"],
     faq: [
       { question: "Os módulos Multiteiner são adequados para regiões remotas?", answer: "Sim. Os módulos são projetados para operações em áreas remotas, com infraestrutura autossuficiente (energia, água, esgoto) e resistência a condições climáticas adversas. Entregamos em qualquer ponto do Brasil." },
       { question: "Quais certificações os equipamentos offshore possuem?", answer: "Os equipamentos offshore Multiteiner são certificados DNV 2.7-1 e EN 12079, os padrões internacionais para uso em plataformas marítimas. Também realizamos inspeções periódicas e recertificações." },
@@ -48,7 +48,7 @@ const SEGMENTS: Record<string, {
     desc: "Armazenagem, distribuição e pontos de apoio logístico com agilidade e segurança.",
     answer: "Para logística, a Multiteiner fornece depósitos temporários, centros de distribuição, pontos de apoio, armazenagem refrigerada, escritórios logísticos e guaritas. Soluções flexíveis para operações temporárias ou permanentes, com entrega rápida em todo o Brasil.",
     solutions: ["Depósito temporário", "Centro de distribuição", "Ponto de apoio", "Armazenagem refrigerada", "Escritório logístico", "Portaria e guarita", "Vestiário", "Refeitório"],
-    clients: ["DHL", "Fedex", "Correios", "Ambev", "Magazine Luiza"],
+    clients: ["Ambev", "Suzano", "Siemens"],
     faq: [
       { question: "Contêineres são adequados para armazenagem de longo prazo?", answer: "Sim. Com tratamento adequado e manutenção periódica, contêineres podem ser utilizados para armazenagem por anos. A Multiteiner oferece opções de compra com garantia e suporte técnico." },
       { question: "É possível instalar prateleiras e sistemas de organização nos contêineres?", answer: "Sim. A Multiteiner oferece personalização completa, incluindo instalação de prateleiras, mezaninos, sistemas de iluminação e climatização para otimizar o espaço de armazenagem." },

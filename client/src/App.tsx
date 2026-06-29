@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import { lazy, Suspense } from "react";
 import WhatsAppButton from "./components/WhatsAppButton";
+import BackToTop from "./components/BackToTop";
 
 // Lazy load para melhor performance
 const Sobre = lazy(() => import("./pages/Sobre"));
@@ -74,6 +75,7 @@ function App() {
           <Toaster />
           <Router />
           <WhatsAppButton />
+          <BackToTop />
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
