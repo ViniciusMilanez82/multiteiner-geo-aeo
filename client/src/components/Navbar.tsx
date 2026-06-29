@@ -5,6 +5,7 @@ import {
   Building2, Calendar, Factory, Truck,
   Box, Users, Shield, Thermometer
 } from "lucide-react";
+import SearchBar from "@/components/SearchBar";
 
 const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_white_hd_5c922366.png";
 const LOGO_DARK_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028319046/KkXwbrtHKRqapzFYapqwHB/logo_dark_a9edd61b.png";
@@ -128,8 +129,14 @@ export default function Navbar() {
             <NavLink href="/cases" label="Cases" active={location === "/cases"} textColor={textColor} />
           </div>
 
-          {/* CTA + Mobile toggle */}
+          {/* Search + CTA + Mobile toggle */}
           <div className="flex items-center gap-3">
+            <div className="hidden lg:block">
+              <SearchBar variant="desktop" />
+            </div>
+            <div className="lg:hidden">
+              <SearchBar variant="mobile" />
+            </div>
             <Link href="/orcamento" className="hidden sm:inline-flex btn-primary text-xs px-4 py-2">
               Orçamento <ArrowRight className="w-3.5 h-3.5" />
             </Link>

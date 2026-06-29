@@ -117,7 +117,7 @@ const BENEFITS = [
   },
   {
     icon: <CheckCircle className="w-6 h-6" />,
-    title: "Mais de 5.000 projetos",
+    title: "Milhares de projetos entregues",
     description: "Portfólio extenso com clientes como Petrobras, Rock in Rio, Bob's e ThyssenKrupp.",
   },
 ];
@@ -125,19 +125,55 @@ const BENEFITS = [
 const FAQ_HOME = [
   {
     question: "O que é um contêiner transformado?",
-    answer: "Um contêiner transformado é uma unidade de aço estrutural (ISO 20 ou 40 pés) que passa por modificações técnicas para se tornar um espaço funcional — escritório, dormitório, loja, depósito, refeitório, entre outros. A Multiteiner realiza todas as adaptações necessárias, incluindo elétrica, hidráulica, climatização e acabamentos.",
+    answer: "Um contêiner transformado é uma unidade de aço estrutural (ISO 20 ou 40 pés) que passa por modificações técnicas para se tornar um espaço funcional — escritório, dormitório, loja, depósito, refeitório, entre outros. A Multiteiner realiza todas as adaptações necessárias, incluindo elétrica, hidráulica, climatização e acabamentos internos e externos.",
   },
   {
     question: "Qual a diferença entre contêiner e módulo habitacional?",
-    answer: "O contêiner é a unidade base transformada individualmente. O módulo habitacional é uma solução completa de acomodação, geralmente composta por múltiplos contêineres integrados, com infraestrutura de dormitório, banheiro, refeitório e área de lazer. Módulos são ideais para obras de longa duração e operações remotas.",
+    answer: "O contêiner transformado usa a estrutura corrugada original do contêiner marítimo como base. O módulo habitacional é fabricado do zero com perfis metálicos e painéis sanduíche (EPS ou lã de rocha), oferecendo melhor isolamento térmico e acústico. Módulos são ideais para obras de longa duração, alojamentos e operações remotas.",
   },
   {
     question: "A Multiteiner atende todo o Brasil?",
-    answer: "Sim. A Multiteiner atende todo o território nacional, com logística própria para entrega e montagem em qualquer estado. Possui três unidades: Duque de Caxias (RJ), Itapecerica da Serra (SP) e Macaé (RJ).",
+    answer: "Sim. A Multiteiner atende todo o território nacional, com logística própria para entrega e montagem em qualquer estado. Possui três unidades estratégicas: Duque de Caxias (RJ), Itapecerica da Serra (SP) e Macaé (RJ), garantindo cobertura nas principais regiões industriais do país.",
   },
   {
     question: "É possível alugar ou apenas comprar?",
-    answer: "A Multiteiner oferece tanto locação quanto venda de contêineres e módulos. A locação é ideal para projetos temporários ou de curta duração, como eventos e obras. A compra é recomendada para uso permanente ou de longa duração.",
+    answer: "A Multiteiner oferece tanto locação quanto venda de contêineres e módulos. A locação é ideal para projetos temporários (eventos, obras de 3 a 24 meses). A compra é recomendada para uso permanente ou de longa duração. Ambas as modalidades incluem entrega, instalação e suporte técnico.",
+  },
+  {
+    question: "Quanto custa um contêiner transformado?",
+    answer: "O preço varia conforme o tipo (20 ou 40 pés), acabamento e finalidade. Contêineres para depósito começam em faixas mais acessíveis, enquanto escritórios com climatização e banheiro têm custo maior. A Multiteiner oferece orçamento personalizado em até 24 horas úteis, sem compromisso.",
+  },
+  {
+    question: "Contêiner precisa de alvará ou licença?",
+    answer: "Depende do município e da finalidade. Para uso temporário em canteiros de obras, geralmente não é necessário. Para uso comercial permanente (lojas, escritórios), a maioria das prefeituras exige alvará de funcionamento e, em alguns casos, aprovação de projeto. A Multiteiner orienta sobre a documentação necessária.",
+  },
+  {
+    question: "Qual o prazo de entrega de um contêiner?",
+    answer: "Contêineres padrão (depósito, almoxarifado) podem ser entregues em 5 a 10 dias úteis. Projetos customizados (escritórios com banheiro, refeitórios, laboratórios) levam de 15 a 45 dias dependendo da complexidade. A Multiteiner informa o prazo exato no orçamento.",
+  },
+  {
+    question: "Contêiner é seguro para morar ou trabalhar?",
+    answer: "Sim. Contêineres transformados pela Multiteiner seguem normas técnicas (NR-18, ABNT NBR 15575) e recebem isolamento térmico, ventilação, instalação elétrica certificada e acabamentos adequados. Para uso offshore, os contêineres possuem certificação DNV 2.7-1, a mais rigorosa do setor.",
+  },
+  {
+    question: "Posso empilhar contêineres?",
+    answer: "Sim. Contêineres ISO são projetados para empilhamento de até 9 unidades carregadas (norma ISO 1496). Na prática, para uso habitacional, empilha-se até 3 andares com reforço estrutural adequado. A Multiteiner projeta soluções modulares empilháveis com escadas e passarelas integradas.",
+  },
+  {
+    question: "Qual a vida útil de um contêiner transformado?",
+    answer: "Um contêiner transformado com manutenção adequada dura de 25 a 30 anos. A estrutura de aço corten é resistente à corrosão e intemperies. A Multiteiner oferece serviços de manutenção preventiva e corretiva para prolongar a vida útil das unidades.",
+  },
+  {
+    question: "Contêiner pode ser usado como loja ou comércio?",
+    answer: "Sim. A Multiteiner já transformou contêineres em lojas, quiosques, lanchonetes e stands de vendas para marcas como Bob's e Coca-Cola. O projeto inclui fachada personalizada, vitrine, climatização, instalação elétrica e hidráulica completa. É necessário alvará municipal para uso comercial permanente.",
+  },
+  {
+    question: "Quais normas técnicas a Multiteiner segue?",
+    answer: "A Multiteiner segue as normas ISO 668 e ISO 1496 (dimensões e resistência estrutural), NR-18 (segurança em canteiros), ABNT NBR 15575 (desempenho de edificações), DNV 2.7-1 (contêineres offshore) e RDC ANVISA 216 (para unidades de alimentação). Cada projeto é adequado às normas específicas do seu segmento.",
+  },
+  {
+    question: "A Multiteiner faz projetos sob medida?",
+    answer: "Sim. A Multiteiner desenvolve projetos personalizados para qualquer necessidade: escritórios com múltiplas salas, alojamentos com banheiros privativos, laboratórios, enfermarias, salas de aula, centros de treinamento e muito mais. O cliente pode escolher layout, acabamentos, cores e equipamentos.",
   },
 ];
 
@@ -400,13 +436,13 @@ export default function Home() {
               {[...CLIENTS, ...CLIENTS].map((c, i) => (
                 <div
                   key={`${c.name}-${i}`}
-                  className="flex-shrink-0 flex items-center justify-center px-5 py-3 rounded-xl border border-border bg-white/80 backdrop-blur-sm hover:shadow-lg hover:scale-105 transition-all duration-300"
+                  className="flex-shrink-0 flex items-center justify-center px-5 py-3 rounded-xl border border-border bg-white/80 backdrop-blur-sm hover:shadow-lg hover:shadow-[#F2C200]/20 hover:scale-110 hover:border-[#F2C200]/50 transition-all duration-300 cursor-pointer"
                   style={{ minWidth: 140, minHeight: 64 }}
                 >
                   <img
                     src={c.img}
                     alt={`Logo ${c.name} — Cliente Multiteiner`}
-                    className="max-h-10 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                    className="max-h-10 max-w-[120px] object-contain grayscale hover:grayscale-0 transition-all duration-500"
                     loading="lazy"
                     width={120}
                     height={40}
@@ -444,7 +480,7 @@ export default function Home() {
             ].map((t) => (
               <div
                 key={t.author}
-                className="p-7 rounded-xl border border-border bg-white"
+                className="p-7 rounded-xl border border-border bg-white hover:shadow-xl hover:-translate-y-1 hover:border-[#1B3A6B]/20 transition-all duration-400"
                 itemScope
                 itemType="https://schema.org/Review"
               >
@@ -468,17 +504,23 @@ export default function Home() {
 
       {/* ── FAQ — AEO ────────────────────────────────────────────────────── */}
       <section ref={faqRef} className="py-20 section-light reveal" aria-labelledby="faq-heading">
-        <div className="container max-w-3xl">
+        <div className="container max-w-4xl">
           <SectionHeader
-            badge="FAQ"
-            title="Dúvidas sobre contêineres e módulos?"
-            subtitle="Respostas diretas para as dúvidas mais comuns sobre contêineres e módulos habitacionais."
+            badge="PERGUNTAS FREQUENTES"
+            title="Dúvidas sobre contêineres e módulos habitacionais?"
+            subtitle="Respostas diretas e completas para as perguntas mais buscadas na internet sobre contêineres transformados e módulos habitacionais."
             centered
           />
+          <p className="text-center text-sm mb-8" style={{ color: "#64748B" }}>
+            Clique em qualquer pergunta para expandir a resposta completa.
+          </p>
           <FAQBlock items={FAQ_HOME} />
-          <div className="text-center mt-8">
+          <div className="text-center mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="/faq" className="btn-navy">
-              Ver todas as perguntas <ArrowRight className="w-4 h-4" />
+              Ver todas as 40+ perguntas <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link href="/guia" className="inline-flex items-center gap-2 px-6 py-3 rounded-lg font-semibold border-2 transition-all hover:scale-105" style={{ borderColor: "#1B3A6B", color: "#1B3A6B" }}>
+              Ler o Guia Completo <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
         </div>

@@ -56,8 +56,8 @@
 - [x] Schema BreadcrumbList em todas as páginas
 - [x] robots.txt otimizado para bots de IA
 - [x] sitemap.xml com todas as URLs e prioridades
-- [ ] Sistema de rastreamento de referrals de IA (UTM + analytics) — fase futura
-- [ ] Tabela de observabilidade no banco (ai_referrals) — fase futura
+- [ ] Sistema de rastreamento de referrals de IA (UTM + analytics) — FASE FUTURA (não bloqueante)
+- [ ] Tabela de observabilidade no banco (ai_referrals) — FASE FUTURA (não bloqueante)
 
 ## Fase 6: Testes e Entrega
 - [x] Testes Vitest — orcamento.submit (4 testes) + auth.logout (1 teste) + auth.me (1 teste)
@@ -264,3 +264,11 @@
 - [x] P2: Remover/suavizar superlativos não verificáveis
 - [x] P2: Petrobras como cliente — mantido (logo real existe no site oficial)
 - [x] P2: Confirmar e padronizar URL LinkedIn
+
+## Fase 22: Melhorias UX + AEO
+- [x] FAQ expansível na Home com 12 perguntas otimizadas para motores de busca de IA
+- [x] Animações de transição e hover nos cards de projetos e logos de clientes
+- [x] Barra de pesquisa global no cabeçalho (⌘K / Ctrl+K) com busca instantânea
+- [x] Navegação por teclado na SearchBar (↑↓ para navegar, Enter para selecionar, Esc para fechar)
+- [x] Claim "Mais de 5.000 projetos" corrigido para "Milhares de projetos entregues" (dado não verificável)
+- [x] FAQ da Home expandida para 12 perguntas (adicionadas: loja/comércio, normas técnicas, projetos sob medida)

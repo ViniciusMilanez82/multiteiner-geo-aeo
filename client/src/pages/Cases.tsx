@@ -254,14 +254,14 @@ export default function Cases() {
               return (
                 <article
                   key={c.id}
-                  className="rounded-2xl overflow-hidden border border-border bg-white shadow-sm hover:shadow-xl transition-shadow duration-500"
+                  className="group rounded-2xl overflow-hidden border border-border bg-white shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-[#1B3A6B]/20"
                 >
                   {/* Imagem + Overlay */}
                   <div className="relative h-64 md:h-80 overflow-hidden">
                     <img
                       src={c.img}
                       alt={`Case ${c.title} — Multiteiner`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       loading="lazy"
                     />
                     <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(15,35,71,0.85) 0%, transparent 60%)" }} />
